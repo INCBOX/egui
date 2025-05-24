@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_enhanced_gui">
+        <text>Enhanced GUI</text>
+    </string>
+
+	<string id="ui_mcm_desc_egui">
+		<text>
+		Mod Configuration Menu for Enhanced Graphical User Interface
+		</text>
+	</string>	
+
+	<string id="ui_mcm_desc_egui_content">
+		<text>
+		Mod version: v.0.6.6
+		</text>
+	</string>
+
+</string_table>

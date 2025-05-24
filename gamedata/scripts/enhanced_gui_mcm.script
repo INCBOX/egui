@@ -1,0 +1,17 @@
+--INC
+--Enhanced Graphical User Interface
+
+function on_mcm_load()
+
+    local options = {
+        id = "enhanced_gui", sh = true, gr = {
+            {id = "enhanced_gui", type = "slide", link = "logo_INC_mcm.dds", text = "ui_mcm_menu_enhanced_gui", size = {512, 50}, spacing = 20},
+			{id = "egui_header1", type= "desc", 	clr = {255,240,240,240}, text = "ui_mcm_desc_egui"},
+			{id = "egui_header2", type= "desc", 	clr = {255,200,200,200}, text = "ui_mcm_desc_egui_content"},
+			
+			{id = "divider", type = "line"},
+        }
+    }
+    
+    return options
+end
