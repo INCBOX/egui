@@ -1,0 +1,15 @@
+<!--VERSION ALL-->
+<!--<w>
+	<file name="ui\Bart's_Radar_Bars\Radar_Bars_512x512_LIGHTER_SAT">
+	    <texture id="ui_inGame2_Radar_blue_bar" x="8" y="0" width="248" height="256" />
+		<texture id="ui_inGame2_Radar_green_bar" x="264" y="7" width="248" height="248" />    
+	</file>	
+</w>
+
+<!--VERSION VANILLA MINIMAP IN-->
+<w>
+	<file name="ui\Bart's_Radar_Bars\Radar_Bars_512x512_LIGHTER_SAT">
+	    <texture id="ui_inGame2_Radar_blue_bar" x="8" y="0" width="248" height="248" />
+		<texture id="ui_inGame2_Radar_green_bar" x="264" y="7" width="248" height="248" />    
+	</file>	
+</w>

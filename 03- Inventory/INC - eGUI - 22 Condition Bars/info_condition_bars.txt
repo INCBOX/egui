@@ -1,0 +1,3 @@
+		
+		
+		added for supporting horizontal and vertical condition bars.

@@ -1,0 +1,3 @@
+		
+		
+		using Better Stats Bar with the vanilla version of inventory, stamina bar doesn't works. Better Stats Bar possibly made to work only with HTSUI mod.

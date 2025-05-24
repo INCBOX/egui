@@ -1,0 +1,25 @@
+
+
+	added "ui_workshop.script" from "UI Rework Anomaly version by Sota"
+
+
+		v.0.6
+		- added "G.A.M.M.A. Artefacts Reinvention" to "gamedata\configs\ui\textures_descr\ui_item.xml" NOTE: Does not crash without this addon.
+		[
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_d" x="186" y="785" width="186" height="157" /> <!-- disabled -->
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_e" x="186" y="785" width="186" height="157" /> <!-- normal -->
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_h" x="0" y="785" width="186" height="157" /> <!-- hover -->
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_t" x="0" y="785" width="186" height="157" /> <!-- toggle -->		
+		]
+		
+		
+		
+		
+		Updated details screen. rest is vanilla anomaly.
+		gamedata\configs\ui\textures_descr
+		
+	<!-- Details -->
+	<file name="ui\items\ui_details">
+		<texture id="ui_itm_details" x="0" y="0" width="768" height="512" />
+		<texture id="ui_itm_line" x="0" y="1008" width="768" height="16" />
+	</file>

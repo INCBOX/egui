@@ -1,0 +1,54 @@
+
+	UPDATE 13.03.25
+	- added "ui_light_gem.xml" file for Stealth Overhaul pos
+	
+	
+	UPDATE May.29.24
+	- disabled "actor_effects.script" to increase compability. autohide stamina bar actived
+
+
+	BEFORE V.0.6.2
+		module 53 "HUD" 
+		description: reworked vanilla Anomaly HUD
+		
+		v.0.6
+		- module 53 added monkey patch "zzz_player_injuries_disabled.script" to disable "Body Health System" addon
+
+	NOTES:
+	- hud elements ported from call of pripyat.
+
+		___________________________________________________________________
+		
+		gamedata\configs\ui
+			
+			maingame
+			maingame_16.xml 	- ammo, health, quickitem. indicators and god mode icon.
+
+				ui_custom_msgs.xml 	[2 Edits] controls PDA icon position in the HUD [notify_icon], hud texts are controlled by this file.
+	
+					1- PDA position is changed.
+					2- Text colors are changed.
+				
+			ui_hud.xml		- artifact belt is moved
+
+
+		___________________________________________________________________
+		
+		added "actor_menu.script" change position of discovery text on HUD
+
+
+		___________________________________________________________________
+		
+		gamedata\configs\ui\textures_descr
+			
+			ui_actor_hint_wnd.xml 				[version call of pripyat]
+			ui_hud.xml 				[0 Edits] 	[version anomaly]
+
+		
+		gamedata\scripts\actor_effects.script
+				this script controls stamina bar. its changed to non-auto hide mode.
+
+	- Issues to fix.
+
+		1- Indicator textures not working properly. Use Anomaly indicators in different position in ui_actor_hint_wnd.dds and update them in the 		ui_actor_hint_wnd.xml
+	

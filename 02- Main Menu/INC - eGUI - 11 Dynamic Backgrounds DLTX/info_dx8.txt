@@ -1,0 +1,5 @@
+		
+		V.0.6
+		- removed module 11 textures, moved DX8 images in this module. they work fine with all resolutions.
+		
+		in 800x600 4:3 screens. dynamic background is only added for ui_name_16. doesn't changes ui_name.xml files.

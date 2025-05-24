@@ -1,0 +1,5 @@
+<w>
+	<file name="ui\ui_wheel_usable_ammo">
+		<texture id="ui_hud2_wheel_usable_ammo" x="40" y="40" width="361" height="361" />
+	</file>
+</w>

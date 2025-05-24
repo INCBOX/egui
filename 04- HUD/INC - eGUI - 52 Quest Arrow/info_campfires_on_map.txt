@@ -1,0 +1,10 @@
+
+
+		NO PATCH REQUIRED
+
+		added "map_spots_campfires.xml" for "Display Cammpfires on map" to "Quest Arrow" module to prevent crashing when disabled.
+		
+		
+		BASED ON MODULE 52 "Quest Arrow"
+		
+		"Display Campfires on Map by Maid" added `#include "ui\map_spots_campfires.xml"` to "map_spots.xml" "map_spots_16.xml" for "Display Campfires on Map by Maid"

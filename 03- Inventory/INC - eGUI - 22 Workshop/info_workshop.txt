@@ -1,0 +1,40 @@
+		
+		"ui_workshop.script" removed [blocking the Workshop UI with a tooltip window] for "Hideout Furniture"
+		
+			function UIWorkshop:Reset(owner, mechanic, toolkits_workshop, dbg)
+				self.dbg = dbg and true or false
+				self.owner = owner
+				self.mechanic = mechanic
+				self.toolkits_workshop = toolkits_workshop or {}
+				self.toolkits_state = {}
+				for i=1,#workshop_toolkits do
+					if self.toolkits_workshop[i] or db.actor:object(workshop_toolkits[i]) then
+						self.toolkits_state[i] = true
+					else
+						self.toolkits_state[i] = false
+					end
+				end
+			
+				-- Switch to state tab
+				self:OnButton_state()
+			
+				-- Background depends on UI owner
+				if device():is_paused() then
+					self.background:Show(true)
+				else
+					self.background:Show(false)
+				end
+			
+			
+			[[
+				-- Fixed by Grok from GAMMA - blocking the Workshop UI with a tooltip window
+				if self.owner.item_info then
+					self.owner.item_info:Update()
+				end
+				
+				if self.owner.upgr_info then
+					self.owner.upgr_info:Update()
+				end	
+			]]
+				
+			end

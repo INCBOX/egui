@@ -1,0 +1,5 @@
+		
+		"ui_options.script" not included due to change in module 12
+		
+		UPDATED eng text file with Warfare Overhaul
+		\gamedata\configs\text\eng\ui_st_options.xml

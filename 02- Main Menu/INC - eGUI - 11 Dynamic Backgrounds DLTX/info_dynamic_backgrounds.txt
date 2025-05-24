@@ -1,0 +1,8 @@
+
+
+		Lauta_ro
+		
+		"Makes the main menu change background texture and music on each boot and also when opening menu while in a loaded game
+		Thanks to RavenAscendant and xcvb"
+
+		REQUIRES LATEST MODDED EXES AND FILES

@@ -1,0 +1,3 @@
+		
+		
+		fix for item icons cut in inventory content boxes. this patch shared by skilldex.

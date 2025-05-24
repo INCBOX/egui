@@ -1,0 +1,8 @@
+
+	Deph of field script founded by INC and written by Grok.
+
+	This script is only for vanilla users. since "Screen Space Shaders "comes with UI DOF [do not use with SSS]
+
+
+	Deph of field is disabled for dialog screens. add this to activate it.
+	name == "Dialog"

@@ -1,0 +1,12 @@
+UPDATE V2.0
+07/02/2021
+	* Adds a texture for ammo counters
+	* Adds new colors
+	* Adds in game options in MCM Menu or in Options/Video/UI/HUD (if you are not using MCM)to activate or deactivate the counters, to change colors, to add bad/verybad ammo counters.
+	(verybad ammos are not availables in 1.5.1, but the addon can manage it anyway, if the option is activated, a red zero is displayed when you are out of ammos.)
+	* Adds Compatibility patch to work with SidHUD
+	* Adds Compatibility patch to work with Vodis HUD.
+	
+UPDATE V2.1
+07/03/2021	
+	* Adds Compatibility patch to work with GBHSR (Grok's Body Health System).

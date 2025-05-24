@@ -1,0 +1,6 @@
+		
+		
+		this addon does not work with alticons addon.
+		
+		fix
+		updated alticons.script

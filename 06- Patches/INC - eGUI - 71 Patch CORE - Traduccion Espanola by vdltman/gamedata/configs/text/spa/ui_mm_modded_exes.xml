@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+
+<string_table>
+	<string id="ui_mm_title_modded_exes">
+		<text>Ejecutables modificados</text>
+	</string>
+	<string id="ui_mm_menu_modded_exes">
+		<text>Ejecutables modificados</text>
+	</string>
+	
+	<string id="ui_mm_lst_ON">
+		<text>ON</text>
+	</string>
+	<string id="ui_mm_lst_OFF">
+		<text>OFF</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_sds_enable">
+		<text>Activar miras con shaders (sds_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_sds_speed_enable">
+		<text>Cambiar sensibilidad del ratón al hacer zoom con miras con shaders (sds_speed_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_sds_zoom_enable">
+		<text>Factor de corrección de zoom con miras con shaders (sds_zoom_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_new_zoom_enable">
+		<text>Cambio de zoom suave con miras con shaders (new_zoom_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_zoom_step_count">
+		<text>Recuento de pasos de zoom suave con miras con shaders (zoom_step_count)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_blur_inner">
+		<text>Desenfoque dentro de la mira con miras con shaders (scope_blur_inner)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_blur_outer">
+		<text>Desenfoque fuera de la mira con miras con shaders (scope_blur_inner)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_brightness">
+		<text>Brillo exterior con miras con shaders (scope_brightness)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_ca">
+		<text>Aberración cromática con miras con shaders (scope_ca)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_radius">
+		<text>Radio de niebla con miras con shaders (scope_fog_radius)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_interp">
+		<text>Velocidad de niebla con miras con shaders (scope_fog_interp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_sharp">
+		<text>Nitidez de niebla con miras con shaders (scope_fog_sharp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_swayAim">
+		<text>Balanceo de niebla con ratón con miras con shaders (scope_fog_swayAim)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_swayMove">
+		<text>Balanceo de niebla con movimiento con miras con shaders (scope_fog_swayMove)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_travel">
+		<text>Distancia máxima de niebla con miras con shaders (scope_fog_travel)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_particle_update_mod">
+		<text>Tasa de actualización de partículas (1 - 30 hz, 0.5 - 60 hz, etc.) (particle_update_mod)</text>
+	</string>
+	<string id="ui_mm_modded_exes_crash_save">
+		<text>Activar guardados al colgarse (crash_save)</text>
+	</string>
+	<string id="ui_mm_modded_exes_crash_save_count">
+		<text>Recuento de guardados al colgarse (crash_save_count)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_snd_doppler_power">
+		<text>Fuerza de sonido de efecto Doppler (snd_doppler_power)</text>
+	</string>
+	<string id="ui_mm_modded_exes_snd_doppler_smoothing">
+		<text>Suavizado de sonido de efecto Doppler (snd_doppler_smoothing)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_first_person_death">
+		<text>Cámara de muerte en primera persona (first_person_death)</text>
+	</string>
+	<string id="ui_mm_modded_exes_first_person_death_position_smoothing">
+		<text>Suavizado de cambio de posición de cámara de muerte en primera persona (first_person_death_position_smoothing)</text>
+	</string>
+	<string id="ui_mm_modded_exes_first_person_death_direction_smoothing">
+		<text>Suavizado de cambio de dirección de cámara de muerte en primera persona (first_person_death_direction_smoothing)</text>
+	</string>
+	<string id="ui_mm_modded_exes_pseudogiant_can_damage_objects_on_stomp">
+		<text>El pseudogigante daña los objetos al pisarlos (pseudogiant_can_damage_objects_on_stomp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_use_english_text_for_missing_translations">
+		<text>Usar texto en inglés si falta traducción (ui_mm_modded_exes_use_english_text_for_missing_translations)</text>
+	</string>
+</string_table>

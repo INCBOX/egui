@@ -1,0 +1,48 @@
+<window>
+	<vodis x="0" y="700" width="180" height="24" stretch="1">
+		<ammo_display_simple x="496" y="12" width="18" height="24" stretch="1">
+			
+				<!--<texture>ui\vodis\BackgroundAMMO.dds</texture>-->
+
+			<ammo x="2" y="3" width="26" height="7"> 
+				<text complex_mode="0" font="letterica25" r="255" g="255" b="255" align="c" vert_align="c"> </text>
+			</ammo>
+
+		</ammo_display_simple>
+	
+		<armor_health  x="354" y="46" width="146" height="8" stretch="1" >
+			
+				<!--<texture>ui\vodis\BackgroundARMOR.dds</texture>-->
+			
+			<text align="1" complex_mode="0" x="124" y="-8" font="small" r="128" g="215" b="255" a="255">armor</text>
+			<value x="0" y="0" width="146" height="8" stretch="1" horz="1" min="0" max="100" pos="0">
+			<progress>
+				<texture>ui\vodis\BarARMOR.dds</texture>
+			</progress>
+			</value>
+
+		</armor_health>
+		
+		<rad_health x="354" y="54" width="146" height="8" stretch="1" >
+			<value x="0" y="0" width="146" height="8" stretch="1" horz="1" min="0" max="100" pos="0">
+			<progress>
+				<texture>ui\vodis\BarRAD.dds</texture>
+			</progress>
+			</value>
+		</rad_health>
+		
+		<bleeding_health x="524" y="54" width="146" height="8" stretch="1" >
+			<value x="0" y="0" width="146" height="8" stretch="1" mode="back" min="0" max="100" pos="0">
+			<progress>
+				<texture>ui\vodis\BarBLEED.dds</texture>
+			</progress>
+			</value>
+		</bleeding_health>
+
+	</vodis>	
+	
+	
+	
+	
+	
+</window>

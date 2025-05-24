@@ -1,0 +1,356 @@
+--[[
+Bart's Good Ammo Counters
+20/11/2020
+Anomaly game scripts used as reference: ui_sidhud.script by RavenAscendant
+
+Author: Bartoche70
+--]]
+
+good_mun		= "good"
+bad_mun			= "bad"
+very_bad_mun	= "verybad"
+l				= "allume"
+dl				= "eteint"
+
+clr_list_1 ={}
+
+ clr_list_1 = {
+	["fmj_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 255, 153, 0), eteint = GetARGB(150, 255, 153, 0)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 204, 0), eteint = GetARGB(150, 255, 204, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 255, 255, 153), eteint = GetARGB(150, 255, 255, 153)},},
+	
+	["ap_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 255, 153, 0), eteint = GetARGB(150, 255, 153, 0)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 204, 0), eteint = GetARGB(150, 255, 204, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 255, 255, 153), eteint = GetARGB(150, 255, 255, 153)},},
+	
+	["third_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 255, 153, 0), eteint = GetARGB(150, 255, 153, 0)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 204, 0), eteint = GetARGB(150, 255, 204, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 255, 255, 153), eteint = GetARGB(150, 255, 255, 153)},}
+}
+
+clr_list_2 ={}
+
+ clr_list_2 = {
+	["fmj_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 51, 204, 102), eteint = GetARGB(150, 51, 204, 102)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 200, 0), eteint = GetARGB(150, 255, 200, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 210, 0, 0), eteint = GetARGB(150, 210, 0, 0)},},
+	
+	["ap_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 51, 204, 102), eteint = GetARGB(150, 51, 204, 102)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 200, 0), eteint = GetARGB(150, 255, 200, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 210, 0, 0), eteint = GetARGB(150, 210, 0, 0)},},
+	
+	["third_ammo"]		= {
+		[good_mun]		=	{allume = GetARGB(255, 51, 204, 102), eteint = GetARGB(150, 51, 204, 102)},
+		[bad_mun]		=	{allume = GetARGB(255, 255, 200, 0), eteint = GetARGB(150, 255, 200, 0)},
+		[very_bad_mun]	=	{allume = GetARGB(255, 210, 0, 0), eteint = GetARGB(150, 210, 0, 0)},}
+}
+
+local tg_update = 0
+local tg_update_step = 10
+
+options = {
+bgac = true,
+boac = true,
+bvoac = true,
+color_mun_bgac = true,
+}
+
+function chargement_parametres()
+	local option_section = ui_mcm and "mcm" or "options"
+	path = ui_mcm and "bgac/" or "video/hud/" 
+		
+	options.bgac =axr_main.config:r_value(option_section,path.."bgac",1,options.bgac)
+	options.boac = axr_main.config:r_value(option_section,path.."boac",1,options.boac)
+	options.bvoac = axr_main.config:r_value(option_section,path.."bvoac",1,options.bvoac)
+	options.color_mun_bgac = axr_main.config:r_value(option_section,path.."color_mun_bgac",1,options.color_mun_bgac)
+
+	if HUD ~= nil then
+		HUD:Rafraichir(true)
+	end
+end
+
+HUD = nil
+function BGAC_ON()
+	RegisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	RegisterScriptCallback("on_console_execute",on_console_execute)
+	RegisterScriptCallback("GUI_on_show",BGAC_MAJ)
+	RegisterScriptCallback("GUI_on_hide",BGAC_MAJ)
+	RegisterScriptCallback("actor_on_weapon_reload",maj_mun)
+		
+	if HUD == nil then
+		HUD = UIBgac()
+		get_hud():AddDialogToRender(HUD)
+	end
+	HUD:Update(true)
+end
+
+function BGAC_OFF()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+	
+	UnregisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	UnregisterScriptCallback("on_console_execute",on_console_execute)
+	UnregisterScriptCallback("GUI_on_show",BGAC_MAJ)
+	UnregisterScriptCallback("GUI_on_hide",BGAC_MAJ)
+	UnregisterScriptCallback("actor_on_weapon_reload",maj_mun)
+end
+
+function BGAC_MAJ()
+	if HUD ~= nil then
+		HUD:Update(true)
+	end
+end
+
+function maj_mun()
+	if HUD ~= nil then
+		HUD:MAJMUN()
+	end
+end
+
+function actor_on_net_destroy()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+end
+
+function on_console_execute(name)
+	if name == "hud_draw" and HUD then
+		HUD:Update(true)
+	end
+end
+
+---
+class "UIBgac" (CUIScriptWnd)
+
+function UIBgac:__init() super()
+	
+	self.ratio  = utils_xml.screen_ratio()
+	self._tmr   = time_global()
+	self.index  = 0
+	self.W      = 40
+	self.offset = 10
+	self.lastwpn = 0
+	
+	self:InitControls()
+end
+
+function UIBgac:__finalize()
+end
+
+function UIBgac:InitControls()
+	local xml  = CScriptXmlInit()
+	xml:ParseFile("ui_bgac_component.xml")
+
+	self.dialog = xml:InitStatic("bgac", self)
+	self.dialog:Show(false)
+		
+	self.bgac_window = xml:InitStatic("bgac:ammo_display", self.dialog)
+	self.third_ammo = xml:InitStatic("bgac:ammo_display:third_ammo", self.bgac_window)	
+	self.ap_ammo= xml:InitStatic("bgac:ammo_display:ap_ammo", self.bgac_window)
+	self.fmj_ammo = xml:InitStatic("bgac:ammo_display:fmj_ammo", self.bgac_window)
+	
+	self.fmj_ammo:Show(false)
+	self.ap_ammo:Show(false)
+	self.third_ammo:Show(false)
+	
+	self:Rafraichir()
+end
+
+
+function UIBgac:Clear()
+	self.dialog:Show(false)
+end
+
+
+function UIBgac:Rafraichir()
+	self.bgac_window:Show(options.bgac)
+end
+
+function UIBgac:Update(bourrin)
+	CUIScriptWnd.Update(self)
+	local tg = time_global()
+	if bourrin then self._tmr = tg - 1 end
+	if self._tmr >= tg then return else self._tmr = tg + tg_update_step end
+	
+	local arme_select = db.actor:active_item()
+	local zoomed = arme_select and ((IsWeapon(arme_select) and arme_select:weapon_is_scope()) or arme_select:section() == "wpn_binoc_inv")   and axr_main.weapon_is_zoomed or false
+	if (not (main_hud_shown())) or (not db.actor:alive())  then
+		self.dialog:Show(false)
+		return
+	end
+	local mun = true
+	if (mun)  then
+		self:MAJMUN()
+	elseif arme_select and IsWeapon(arme_select) and (arme_select:id() ~= self.lastwpn) or false then
+		self:MAJMUN()
+	end
+	
+	self.lastwpn = arme_select and IsWeapon(arme_select) and arme_select:id() or self.lastwpn	
+	self.dialog:Show(true)
+end
+
+function UIBgac:MAJMUN()
+	if not options.bgac then return end
+	local arme_select = db.actor:active_item()
+	
+	if arme_select and IsWeapon(arme_select) and (not IsItem("fake_ammo_wpn",arme_select:section())) then
+		local mun = bart_liste_mun(arme_select)
+		self.bgac_window:Show(true)
+	
+		if mun[1] then
+			self.fmj_ammo:TextControl():SetText(mun[1][0])
+			self.fmj_ammo:TextControl():SetTextColor( mun[1][1])
+			self.fmj_ammo:Show(true)
+		else
+			self.fmj_ammo:Show(false) 
+		end
+		if mun[2] then
+			self.ap_ammo:TextControl():SetText(mun[2][0])
+			self.ap_ammo:TextControl():SetTextColor( mun[2][1])
+			self.ap_ammo:Show(true)
+		else
+			self.ap_ammo:Show(false) 
+		end
+		if mun[3] then
+			self.third_ammo:TextControl():SetText(mun[3][0])
+			self.third_ammo:TextControl():SetTextColor( mun[3][1])
+			self.third_ammo:Show(true)
+		else
+			self.third_ammo:Show(false) 
+		end
+	else 
+			self.third_ammo:Show(false)
+			self.ap_ammo:Show(false)
+			self.fmj_ammo:Show(false)
+			
+			self.bgac_window:Show(false)
+	end
+end
+
+bart_tampon_mun = {}
+function bart_liste_mun(obj)
+	object    			= obj
+	id        			= obj:id()
+	sect_mun   			= obj:section()
+	cat_mun 			= obj:get_ammo_type()
+	bart_backpack_mun	= {}
+
+	if (not bart_tampon_mun[id]) then
+		bart_tampon_mun[id] = utils_item.get_ammo(sect_mun, id)
+				
+		if (#bart_tampon_mun[id] > 9) then
+			for i=9, #bart_tampon_mun[id] do
+				bart_tampon_mun[id][i] = nil
+			end
+		end
+	end
+	liste_mun = bart_tampon_mun[id]
+	empty_table(bart_backpack_mun)
+	
+	local function boucle_bart(temp, itm)
+		local sect_mun = itm:section()
+		if IsItem("ammo",sect_mun) then
+			bart_backpack_mun[sect_mun] = (bart_backpack_mun[sect_mun] or 0) + itm:ammo_get_count()
+		end
+	end
+	db.actor:iterate_inventory(boucle_bart, nil)
+	
+	local goodmun			= {}
+	local badmun			= {} 
+	local verybadmun		= {} 
+	local cpt_goodmun		= 3
+	local cpt_badmun		= 3
+	local cpt_verybadmun 	= 3
+	local nom_mun		 	= {"fmj_ammo","ap_ammo","third_ammo"}
+	local color_mun			= {}
+	if (not options.color_mun_bgac) then color_mun = clr_list_1 else color_mun = clr_list_2 end
+	
+	for i=1,#liste_mun do
+		local sect_mun = liste_mun[i]
+		local found_bad = sect_mun and string.find(sect_mun,"bad") and true or false 
+		local found_very = sect_mun and string.find(sect_mun,"very") and true or false 
+		if sect_mun and (not found_bad)  then
+			goodmun[cpt_goodmun] = {}
+			goodmun[cpt_goodmun][0] = (bart_backpack_mun[sect_mun] or 0)
+			goodmun[cpt_goodmun][1] = cat_mun == (i - 1) and color_mun[nom_mun[cpt_goodmun] or "fmj_ammo"][good_mun][l] or color_mun[nom_mun[cpt_goodmun] or "fmj_ammo"][good_mun][dl]
+			cpt_goodmun = cpt_goodmun - 1
+		elseif sect_mun and (not found_very) then
+			badmun[cpt_badmun] = {}
+			badmun[cpt_badmun][0] = (bart_backpack_mun[sect_mun] or 0)
+			badmun[cpt_badmun][1] = cat_mun == (i - 1) and color_mun[nom_mun[cpt_badmun] or "fmj_ammo"][bad_mun][l] or color_mun[nom_mun[cpt_badmun] or "fmj_ammo"][bad_mun][dl]
+			cpt_badmun = cpt_badmun - 1	
+		else 
+			verybadmun[cpt_verybadmun] = {}
+			verybadmun[cpt_verybadmun][0] = (bart_backpack_mun[sect_mun] or 0)
+			verybadmun[cpt_verybadmun][1] = cat_mun == (i - 1) and color_mun[nom_mun[cpt_verybadmun] or "fmj_ammo"][very_bad_mun][l] or color_mun[nom_mun[cpt_verybadmun] or "fmj_ammo"][very_bad_mun][dl]
+			cpt_verybadmun = cpt_verybadmun - 1	
+		end
+	end
+		local x = {
+				options.bvoac and goodmun[1] and badmun[1] and verybadmun[1] and badmun[1][0] == 0 and goodmun[1][0] == 0 and verybadmun[1] or badmun[1] and goodmun[1] and options.boac and goodmun[1] and badmun[1] and badmun[1][0] > 0 and goodmun[1][0] == 0 and badmun[1] or goodmun[1],
+				options.bvoac and goodmun[2] and badmun[2] and verybadmun[2] and badmun[2][0] == 0 and goodmun[2][0] == 0 and verybadmun[2] or badmun[2] and goodmun[2] and options.boac and goodmun[2] and badmun[2] and badmun[2][0] > 0 and goodmun[2][0] == 0 and badmun[2] or goodmun[2],
+				options.bvoac and goodmun[3] and badmun[3] and verybadmun[3] and badmun[3][0] == 0 and goodmun[3][0] == 0 and verybadmun[3] or badmun[3] and goodmun[3] and options.boac and goodmun[3] and badmun[3] and badmun[3][0] > 0 and goodmun[3][0] == 0 and badmun[3] or goodmun[3]}
+		return x
+end
+
+----------------------------------
+--	Callbacks
+----------------------------------
+
+local function actor_on_first_update()
+	BGAC_ON()
+end
+
+function bart_efface()
+	if HUD then 	
+		HUD:Clear()
+	end
+end
+
+function inject_options_UI()
+	if ui_mcm then return end
+	if (#ui_options.options == 0) then ui_options.init_opt_base() end
+	
+	id_1 = 0
+	id_2 = 0
+	for i=1, #ui_options.options do
+		if ui_options.options[i].id == "video" then id_1 = i end
+	end
+	for i=1, #ui_options.options[id_1].gr do
+		if (ui_options.options[id_1].gr[i].id == "hud") then id_2 = i end
+	end
+	inject_options_to_table(ui_options.options[id_1].gr[id_2].gr)
+end
+
+function on_mcm_load()
+	t = {}
+	inject_options_to_table(t)
+	sh_options = { id= "bgac"      	,sh=true 	 ,gr=t}
+	return sh_options
+end
+
+function inject_options_to_table(t)
+	table.insert(t, {id = "sidslide", type = "slide", link = "ui\\bgac\\bgac_Banner.dds",size = {512,50}, text= "ui_mm_video_hud_bgacslide"})
+	table.insert(t, {id = "line", type = "line"})
+	table.insert(t, {id = "bgac", type = "check", val = 1, def = options.bgac, })
+	table.insert(t, {id = "boac", type = "check", val = 1, def = options.boac, })
+	table.insert(t, {id = "bvoac", type = "check", val = 1, def = options.bvoac, })
+	table.insert(t, {id = "color_mun_bgac", type = "check", val = 1, def = options.color_mun_bgac, })
+	table.insert(t, {id = "line", type = "line"})
+end	
+
+function on_game_start()
+	inject_options_UI()
+	chargement_parametres()
+	RegisterScriptCallback("actor_on_first_update",actor_on_first_update)
+	RegisterScriptCallback("actor_on_before_death",bart_efface)
+	RegisterScriptCallback("on_option_change", chargement_parametres)
+end

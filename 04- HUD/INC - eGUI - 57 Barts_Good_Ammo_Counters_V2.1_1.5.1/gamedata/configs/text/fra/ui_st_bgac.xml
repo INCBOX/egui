@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252"?>
+
+<!--	BGAC strings -->
+<string_table>
+	<string id="ui_mm_video_hud_bgacslide">
+		<text>           Options B.G.A.C</text>
+	</string>
+	<string id="ui_mm_video_hud_bgac">
+		<text>Bart's Good Ammo Counters</text>
+	</string>
+	<string id="ui_mm_video_hud_bgac_desc">
+		<text>Affiche le total de munitions que vous possédez dans votre inventaire pour tous les types de munitions de votre arme actuelle. (Feux tricolores : Vert --> Bonnes munitions -- Orange --> Vieilles munitions -- Rouge --> Très vieilles munitions)</text>
+	</string>
+	<string id="ui_mm_video_hud_boac">
+		<text>Active le compteur de munitions vieilles (uniquement si B.G.A.C est activé)</text>
+	</string>
+	<string id="ui_mm_video_hud_boac_desc">
+		<text>Les munitions vieilles apparaîtront en ORANGE (seulement si vous êtes à cours de bonnes munitions de ce type</text>
+	</string>
+	<string id="ui_mm_video_hud_bvoac">
+		<text>Active le compteur de munitions très vieilles (uniquement si B.G.A.C est activé)</text>
+	</string>
+	<string id="ui_mm_video_hud_bvoac_desc">
+		<text>Les munitions très vieilles apparaîtront en ROUGE (seulement si vous êtes à cours de bonnes munitions et de vieilles munitions de ce type. (Donc ce sera un zero en rouge puisque Anomaly 1.5.1 ne gère pas les très vieilles munitions)</text>
+	</string>
+	<string id="ui_mm_video_hud_color_mun_bgac">
+		<text>Couleurs orangées d'Anomaly par défaut</text>
+	</string>
+	<string id="ui_mm_video_hud_color_mun_bgac_desc">
+		<text>Désactive les couleurs de BGAC par défaut pour activer les couleurs orangées d'Anomaly par défaut de la plus sombre (bonnes munitions) à la plus claire (très vieilles munitions)</text>
+	</string>
+</string_table>
+
+

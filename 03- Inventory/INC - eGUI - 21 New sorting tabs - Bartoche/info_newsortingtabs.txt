@@ -1,0 +1,3 @@
+		
+		
+		disabled configs\items\weapons\ "m_bolt.ltx" to prevent bolt animation patches.

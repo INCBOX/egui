@@ -1,0 +1,67 @@
+
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		if xml_file_name == [[ui\ui_mm_main.xml]]
+        or xml_file_name == [[ui\ui_mm_main_16.xml]]
+        or xml_file_name == [[ui\ui_credits_16.xml]]
+		or xml_file_name == [[ui\ui_mm_faction_select.xml]]
+        or xml_file_name == [[ui\ui_mm_faction_select_16.xml]]
+		or xml_file_name == [[ui\ui_mm_load_dlg.xml]]
+        or xml_file_name == [[ui\ui_mm_load_dlg_16.xml]]
+		or xml_file_name == [[ui\ui_mm_save_dlg.xml]]
+        or xml_file_name == [[ui\ui_mm_save_dlg_16.xml]]
+        or xml_file_name == [[ui\ui_options.xml]]
+        or xml_file_name == [[ui\ui_options_16.xml]]
+        or xml_file_name == [[ui\ui_mcm.xml]]
+        or xml_file_name == [[ui\ui_mcm_16.xml]]
+        then
+
+		math.randomseed(os.time())
+
+			local res = xml_obj:query("background > auto_static > texture")
+        	local menu_t = {
+	"ui\\enhancedGUI_00",
+	"ui\\enhancedGUI_01",
+	"ui\\enhancedGUI_02",
+	"ui\\enhancedGUI_03",
+	"ui\\enhancedGUI_04",
+	"ui\\enhancedGUI_05",
+	"ui\\enhancedGUI_06",
+	"ui\\enhancedGUI_07",
+	"ui\\enhancedGUI_08",
+	"ui\\enhancedGUI_09",
+	"ui\\enhancedGUI_10",
+	"ui\\enhancedGUI_11",
+	"ui\\enhancedGUI_12",
+	"ui\\enhancedGUI_13",
+	"ui\\enhancedGUI_14",
+	"ui\\enhancedGUI_15",
+	"ui\\enhancedGUI_16",
+	"ui\\enhancedGUI_17",
+	"ui\\enhancedGUI_18",
+	"ui\\enhancedGUI_19",
+	"ui\\enhancedGUI_20",
+	"ui\\enhancedGUI_21",
+	"ui\\enhancedGUI_22",
+	"ui\\enhancedGUI_23",
+	"ui\\enhancedGUI_24",
+	"ui\\enhancedGUI_25",
+	"ui\\enhancedGUI_26",
+	"ui\\enhancedGUI_27",
+	"ui\\enhancedGUI_28",
+	"ui\\enhancedGUI_29",
+	"ui\\enhancedGUI_30",
+	"ui\\enhancedGUI_31",
+	"ui\\enhancedGUI_32",
+	"ui\\enhancedGUI_33",
+	"ui\\enhancedGUI_34",
+
+}
+        	local picked_menu = menu_t[math.random(1, #menu_t)]
+			if res[1] then
+				el = res[1]
+				xml_obj:setText (el, picked_menu)
+			end
+		end
+	end)
+end

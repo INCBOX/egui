@@ -1,0 +1,11 @@
+--	function monkey_on_game_start()
+--		printf("[zzz_player_injuries] Hey! I have been monkey patched by zzz_player_injuries_disabled.script")
+--	end
+	
+--	if zzz_player_injuries then
+--		zzz_player_injuries.on_game_start = monkey_on_game_start
+--	end
+	
+--	function on_game_start()
+--		printf("[zzz_player_injuries_disabled] I am monkey patching zzz_player_injuries.script")
+--	end

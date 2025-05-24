@@ -1,0 +1,44 @@
+patch notes 0.2.4.21:
+
+For the sake of simplicity 21 comes out as a full version, follow up versions will be tagged as 0.2.4.21 hf/patch # number
+Also I broke the calimator sights on DX8, will fix later. If you are palying on potato please use meanwhile DX9 if possible.
+
+Changes wuut:
+- holographic callimators sights have recaived a complete rework. They how have an actual projection and are based on attachment/weapons position rather than the center of the screen.
+- similarly the point of shooting (where the boolet comes out) has been aligned based on the weapon rather than the centre of the screen. As an effect hip fired shots will have a slight offset from the screen centre.
+- same was done with dual render pip scopes they are now based on weapon.
+- added gun rendering in dual render pip scopes.
+- added new animation set for anm_idle_aim_moving and anm_idle_aim_moving_empty to the engine (yes they were previously ignored in anomaly 1.5.1)
+
+EQ:
+- added missing animations for assault rifles
+- many minor changes in general config
+- New handles system (2.0)
+	"Now tactical handles are not nailed to the handguards , and have their own models and different characteristics".
+- because of new grip system many handguards and other parts were removed
+- modules descriptions were corrected and new ones were added.
+- deleted, corrected and added new icons for modules
+- some description edits
+
+
+патч-ноты 0.2.4.21:
+
+Для простоты 21 выходит как полная версия, последующие версии будут помечены как 0.2.4.21 hf/patch # number
+Также я сломал калиматорный прицел на DX8, будет исправлено позже. Если вы играете на картошке, пожалуйста, используйте DX9, если это возможно.
+
+Изменения wuut:
+- голографические прицелы каллиматоров подверглись полной переработке. Теперь они имеют реальную проекцию и основываются на положении оружия, а не на центре экрана.
+- Аналогичным образом, точка выстрела (место, откуда вылетает пуля) была выровнена по оружию, а не по центру экрана. В результате выстрелы от бедра будут немного смещены относительно центра экрана.
+- То же самое было сделано с прицелами с двойным рендером, они теперь основаны на оружии.
+- добавлен рендеринг оружия в двойных прицелах.
+- в движок добавлен новый набор анимаций для anm_idle_aim_moving и anm_idle_aim_moving_empty (да, ранее они игнорировались в аномалии 1.5.1).
+
+EQ:
+- добавлены недостающие анимации для автоматов
+- много мелких правок общего конфига
+- Новая система рукояток (2.0)
+	"теперь тактические рукоятки не прибиты гвоздями к цевьям, а имею собственные модели и различные характеристики"
+- из-за новой системы рукояток были подчищены много цевьев и других деталей, т к они являлись копией
+- подправлено описание модулей и добавлено новое
+- удалены, поправлены и добавлены новые иконки для модулей
+- мелкие правки описания

@@ -1,0 +1,4 @@
+
+		
+		Unlocking Portraits by VodkaChicken
+			gamedata\configs\plugins\player_icons.ltx

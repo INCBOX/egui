@@ -1,0 +1,7 @@
+
+		module 91 "Body Health System" Patch for Enhanced Graphical User Interface
+		description: changed colors of the hud and texts based on module 53 "HUD"
+		
+		v.0.6
+		- module 91 "Body Health System" "maingame.xml" "maingame_16.xml" changed ammo counter with EGUI, 
+		- added monkey patch "zzz_player_injuries_disabled.script" to enable "Body Health System"

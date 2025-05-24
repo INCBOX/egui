@@ -1,0 +1,6 @@
+		
+		
+		"Body Dots on Minimap" by RavenAscendant
+		High compatibility, high contrast dead body dots on mini map. Update May2021: Now tracks mutants too.
+
+		I also adjusted the color of the dots to make them more visible. If you don't like the color change delete the configs folder.

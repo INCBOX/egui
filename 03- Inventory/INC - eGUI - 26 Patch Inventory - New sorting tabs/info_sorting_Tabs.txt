@@ -1,0 +1,13 @@
+
+
+		New Sorting Tabs
+		
+		ATTENTION: This mod changes "system.ltx" you need to do always the following steps when enabling or disabling it! otherwise tabs will not work!.
+
+		FIX for "button_sort_tab_9" issue is linked with "New sorting tabs"
+
+			for "Mod Organizer 2" users
+			Delete - system.ltx inside overwrite folder.
+			
+			non "Mod Organizer 2" users
+			Delete - anomaly\gamedata\configs\system.ltx

@@ -1,0 +1,30 @@
+function on_xml_read()
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        if xml_file_name == [[ui\ui_wheel_ammo.xml]]
+        then
+            local res = xml_obj:query("ammo > btn")
+            if res[1] then
+                local el = res[1]
+                xml_obj:setElementAttr(el, {x=5, width=70, height=50})
+            end
+
+            local res = xml_obj:query("ammo > text")
+            if res[1] then
+                local el = res[1]
+                xml_obj:setElementAttr(el, {y=55})
+
+            local res = xml_obj:query("ammo > text > text")
+            if res[1] then
+                local el = res[1]
+                xml_obj:setElementAttr(el, {r=200, g=200, b=200})
+            end
+
+            local res = xml_obj:query("ammo > highlight")
+            if res[1] then
+                local el = res[1]
+                xml_obj:setElementAttr(el, {x=5, width=70, height=50})
+            end
+            
+        end
+    end)
+end

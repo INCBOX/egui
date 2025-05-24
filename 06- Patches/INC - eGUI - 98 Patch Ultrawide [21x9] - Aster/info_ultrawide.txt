@@ -1,0 +1,11 @@
+
+
+		We made patch for faction selection screen because there is a issue with LOADOUT items, icons were invisible and cannot be picked..
+
+		in the Faction selection screen there is sometimes empty space between items, this is not a bug. its caused because game picked those items in players inventory.
+
+
+		scripts
+		"alticons.script"
+		normal "self.dialog:SetWndPos( vector2():set(pos.x - 60,"
+		ultrawide by hunlight "self.dialog:SetWndPos( vector2():set(pos.x - 100,"

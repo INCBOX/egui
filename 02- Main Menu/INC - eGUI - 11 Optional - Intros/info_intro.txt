@@ -1,0 +1,4 @@
+
+
+	"ui_movies.xml" FILE SAFE TO REMOVE
+	[this file is extracted from Shadow of Chernobly and not required and works for Anomaly. it's only contained for devs.]

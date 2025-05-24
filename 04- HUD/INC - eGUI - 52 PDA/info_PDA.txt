@@ -1,0 +1,5 @@
+
+		
+		textures are fixed with Call of Pripyat and Clear sky versions.
+		
+		"ab_move_notification.script" script from "Body Health System" seperates blinking PDA icon, changes it's position,and can be hidden with hud in game.

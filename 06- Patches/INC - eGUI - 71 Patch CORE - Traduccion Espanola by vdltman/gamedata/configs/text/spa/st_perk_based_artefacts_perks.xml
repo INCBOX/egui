@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!--
+  New Artefacts
+-->
+<string_table>
+  <string id="st_pba_af_cocoon_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Piel de piedra\n %c[0,81,63,22] • %c[0,209,172,56]Consigues un 15 % de protección contra daño cuerpo a cuerpo al equiparte el artefacto\n %c[0,81,63,22] • %c[0,209,172,56]Recibir daño cuerpo a cuerpo te otorga una acumulación de Piel de piedra\n %c[0,81,63,22] • %c[0,209,172,56]Con cada acumulación, recibirás un 15 % adicional de protección contra daño cuerpo a cuerpo, pero también un 10 % de penalización de velocidad\n %c[0,81,63,22] • %c[0,209,172,56]Cada acumulación aumenta la protección con rendimientos decrecientes y penaliza más la velocidad\n %c[0,81,63,22] • %c[0,209,172,56]El máximo de acumulaciones posible es 10, en cuyo caso recibirás un 75 % de reducción de daño cuerpo a cuerpo, pero serás completamente inmóvil\n %c[0,81,63,22] • %c[0,209,172,56]El efecto dura 10 segundos, tras los cuales se queman todas las acumulaciones\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos múltiples aumentan la velocidad de obtención de acumulaciones</text>
+  </string>
+  <string id="st_pba_af_cell_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Desintegrador\n %c[0,81,63,22] • %c[0,209,172,56]Desintegra parte de la bala que se dirige hacia ti. Por desgracia, el proceso emite mucha radiación, por lo que enfermarás.\n %c[0,81,63,22] • %c[0,209,172,56]Reduce el daño de las balas en un 15 %\n %c[0,81,63,22] • %c[0,209,172,56]La cantidad de daño reducido se convierte en radiación\n %c[0,81,63,22] • %c[0,209,172,56]Se acumula con muchos artefactos, con rendimientos decrecientes</text>
+  </string>
+  <string id="st_pba_af_fountain_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Momento LetyShops\n %c[0,81,63,22] • %c[0,209,172,56]Recibe un 4 % de devolución en cada compra\n %c[0,81,63,22] • %c[0,209,172,56]Se acumula con muchos artefactos</text>
+  </string>
+  <string id="st_pba_af_spaika_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Ascensión crítica\n %c[0,81,63,22] • %c[0,209,172,56]Los golpes consecutivos te confieren una bonificación de un 5 % de daño en tu siguiente disparo\n %c[0,81,63,22] • %c[0,209,172,56]Acertar a un enemigo en una zona crítica te da una bonificación de 10 %\n %c[0,81,63,22] • %c[0,209,172,56]Fallar el disparo reinicia la acumulación de bonificaciones y te da un daño psíquico proporcional a la acumulación que tuvieras\n %c[0,81,63,22] • %c[0,209,172,56]Las bonificaciones se pueden acumular ad infinitum, siempre y cuando no falles\n %c[0,81,63,22] • %c[0,209,172,56]Cada artefacto extra añade un 2,5 % a los aciertos tanto normales como críticos\n %c[0,81,63,22] • %c[0,209,172,56]Desequipar todos los artefactos Pincho eliminará la acumulación sin penalizaciones</text>
+  </string>
+  <string id="st_pba_af_signet_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Luz de la tranquilidad\n %c[0,81,63,22] • %c[0,209,172,56]Restaura la salud y la protección psíquica al estar cerca de una hoguera, amplifica los artefactos de recuperación de protección psíquica cerca de la hoguera\n %c[0,81,63,22] • %c[0,209,172,56]El efecto se acumula con cada artefacto en el cinturón</text>
+  </string>
+  <string id="st_pba_af_repei_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Laceración leve\n %c[0,81,63,22] • %c[0,209,172,56]Tu arma pierde el 50 % de su potencia bruta, pero consigue la habilidad de infligir daño por hemorragia\n %c[0,81,63,22] • %c[0,209,172,56]Con cada acierto, el enemigo recibirá una acumulación de hemorragia y empezará a perder salud de forma proporcional a la potencia bruta del arma\n %c[0,81,63,22] • %c[0,209,172,56]Será más probable que los PNJ caigan en estado herido, en el que te suplicarán clemencia y te podrían dar información valiosa, si es que llegas a ellos antes de que mueran\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos múltiples aumentan la eficacia de las acumulaciones de hemorragia\n</text>
+  </string>
+  <string id="st_pba_af_bat_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Alquimia de la Zona\n %c[0,81,63,22] • %c[0,209,172,56]Con un Murciélago en la mochila, podrás transmutar tus artefactos\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos pueden «mejorarse», es decir, cambiarse a una categoría mejor (Estrella Nocturna -&gt; Gravi -&gt; Carpín), o pueden «mutarse», es decir, cambiarse a otro tipo de la misma categoría (Estrella Nocturna -&gt; Sangre Petrificada -&gt; Medusa)\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos de máxima categoría solo pueden mutarse\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos con ventaja solo pueden mutarse\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos especiales, como el Murciélago, no pueden transmutarse\n %c[0,81,63,22] • %c[0,209,172,56]Cada transmutación te costará un artefacto Murciélago</text>
+  </string>
+  <string id="st_pba_af_sun_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Energía solar\n %c[0,81,63,22] • %c[0,209,172,56]Te da una inyección de salud y resistencia con tiempo despejado, un poco de resistencia con tiempo parcialmente despejado y una penalización de resistencia con tiempo no despejado y de noche\n %c[0,81,63,22] • %c[0,209,172,56]El efecto se acumula con cada artefacto en el cinturón</text>
+  </string>
+  <string id="st_pba_af_ear_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Voluntad de vivir\n %c[0,81,63,22] • %c[0,209,172,56]Te confiere una regeneración de salud más fuerte cuanta menos salud tengas si tienes menos del 25 % de salud hasta esa cantidad\n %c[0,81,63,22] • %c[0,209,172,56]Un mayor número de artefactos aumenta la regeneración y aumenta ligeramente la salud máxima con la que se activa</text>
+  </string>
+  <string id="st_pba_af_chelust_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]El peso de la devoción\n %c[0,81,63,22] • %c[0,209,172,56]Proporciona una ligera regeneración de salud y resistencia\n %c[0,81,63,22] • %c[0,209,172,56]Los miembros del Pecado triplican el efecto del artefacto y añaden regeneración psíquica\n %c[0,81,63,22] • %c[0,209,172,56]Los compañeros del Pecado reciben regeneración de salud uno a uno, empezando por el más débil\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_atom_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Bendición de Arszi\n %c[0,81,63,22] • %c[0,209,172,56]Convierte la irradiación aguda en un chute de resistencia y te confiere una ligera cura contra la radiación\n %c[0,81,63,22] • %c[0,209,172,56]Un mayor número de artefactos potencia el chute, pero lo hace menos continuo</text>
+  </string>
+  <string id="st_pba_af_lighthouse_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]La forma atípica de viajar\n %c[0,81,63,22] • %c[0,209,172,56]Matar a una persona te teletransportará al lugar donde murió\n %c[0,81,63,22] • %c[0,209,172,56]No lo pruebes con los cuervos\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_fire_loop_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Pacto con el diablo\n %c[0,81,63,22] • %c[0,209,172,56]Artefacto revolucionario\n %c[0,81,63,22] • %c[0,209,172,56]Al mover el artefacto al cinturón se firmará el Pacto con la Zona\n %c[0,81,63,22] • %c[0,209,172,56]La Zona reforzará tu Nudo y lo convertirá en el misterioso artefacto conocido como Lucifer\n \nSe recomienda encarecidamente guardar antes de activarlo.</text>
+  </string>
+  <string id="st_pba_af_zhelch_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Ese stalker loco de la facción Libertad\n %c[0,81,63,22] • %c[0,209,172,56]Proporciona una gran resistencia psíquica\n %c[0,81,63,22] • %c[0,209,172,56]Drena la salud psíquica para restaurar la salud\n %c[0,81,63,22] • %c[0,209,172,56]Si la salud está llena, restaura la salud psíquica\n %c[0,81,63,22] • %c[0,209,172,56]Hay una probabilidad de que realices alguna acción incontrolable\n %c[0,81,63,22] • %c[0,209,172,56]Cuanta menos salud psíquica, más probabilidades hay de realizar dicha acción y más grave será esta\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_sandstone_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Infusión de la Zona\n %c[0,81,63,22] • %c[0,209,172,56]Entrar en anomalías de varios tipos infunde tu arma activa\n %c[0,81,63,22] • %c[0,209,172,56]El arma infundida pierde un 30 % de su potencia bruta, pero gana un 50 % de potencia de daño elemental según el tipo de anomalía\n %c[0,81,63,22] • %c[0,209,172,56]Solo las anomalías eléctricas, térmicas y químicas son válidas para la infusión, incluidos los campos anómalos\n %c[0,81,63,22] • %c[0,209,172,56]El efecto dura 3 minutos, el artefacto debe equiparse para que el efecto funcione\n %c[0,81,63,22] • %c[0,209,172,56]Puedes soltar el artefacto sobre el arma para infundirle un efecto aleatorio. El efecto duraría 10 minutos y el artefacto se destruiría después de la infusión\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_kislushka_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]¿De qué color es tu sangre?\n %c[0,81,63,22] • %c[0,209,172,56]Drena la saciedad para curar una hemorragia\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos múltiples aumentan la cura, pero también el drenado</text>
+  </string>
+  <string id="st_pba_af_black_angel_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Esquiva esta\n %c[0,81,63,22] • %c[0,209,172,56]20 % de probabilidad de devolver el 35 % del daño por balas\n %c[0,81,63,22] • %c[0,209,172,56]Anula el daño de impacto al devolver\n %c[0,81,63,22] • %c[0,209,172,56]Un mayor número de artefactos aumenta la probabilidad de devolver, con rendimientos decrecientes</text>
+  </string>
+  <string id="st_pba_af_grapes_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Gula necesaria\n %c[0,81,63,22] • %c[0,209,172,56]Proporciona una bonificación de salud al consumir alimentos en función de sus calorías\n %c[0,81,63,22] • %c[0,209,172,56]El efecto se prolonga con cada artefacto en el cinturón</text>
+  </string>
+  <string id="st_pba_af_skull_miser_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Han cantado bingo\n %c[0,81,63,22] • %c[0,209,172,56]Al matar a un PNJ en la cabeza, aparecerá dinero extra de forma novedosa\n %c[0,81,63,22] • %c[0,209,172,56]Un mayor número de artefactos generará más dinero</text>
+  </string>
+  <string id="st_pba_af_star_phantom_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Pacifista fantasma\n %c[0,81,63,22] • %c[0,209,172,56]Serás invisible para todos durante unos 6 minutos\n %c[0,81,63,22] • %c[0,209,172,56]No podrás desenfundar un arma, hablar con nadie o interactuar con nada\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_medallion_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]El amuleto de la (mala) suerte\n %c[0,81,63,22] • %c[0,209,172,56]35 % de probabilidad de que el daño por balas se redirija por completo a un compañero tuyo\n %c[0,81,63,22] • %c[0,209,172,56]Algunos compañeros son más listos que otros y sospecharán antes de morir\n %c[0,81,63,22] • %c[0,209,172,56]Se acumula con muchos artefactos, con rendimientos decrecientes</text>
+  </string>
+  <string id="st_pba_af_peas_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Amigo de la noche\n %c[0,81,63,22] • %c[0,209,172,56]Otorga cura de hemorragias y aumento de la velocidad desde el anochecer hasta el amanecer con cualquier tiempo\n %c[0,81,63,22] • %c[0,209,172,56]Reduce el sueño de noche, aumenta el sueño de día\n %c[0,81,63,22] • %c[0,209,172,56]El efecto se acumula con cada artefacto en el cinturón</text>
+  </string>
+  <string id="st_pba_af_generator_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Se acerca Godzilla\n %c[0,81,63,22] • %c[0,209,172,56]Restaura la carga de las pilas de los objetos mientras esprintas\n %c[0,81,63,22] • %c[0,209,172,56]No resucitará las pilas gastadas o los dispositivos sin pila\n %c[0,81,63,22] • %c[0,209,172,56]Un mayor número de artefactos te conferirá una mayor velocidad de recarga y un ligero aumento de la velocidad al esprintar</text>
+  </string>
+  <string id="st_pba_af_ball_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]El cascanueces\n %c[0,81,63,22] • %c[0,209,172,56]Artefacto basado en categoría\n %c[0,81,63,22] • %c[0,209,172,56]Amplifica el poderosísimo pie del jugador y le permite patear a más mutantes, lo que provoca una muerte instantánea\n %c[0,81,63,22] • %c[0,209,172,56]Cada artefacto en el cinturón te permitirá patear a más mutantes\n %c[0,81,63,22] • %c[0,209,172,56]Tiene un tiempo de recarga de 2 segundos con 1 artefacto, que aumenta en 1 segundo por cada artefacto que se tenga en el cinturón</text>
+  </string>
+  <string id="st_pba_af_fonar_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Cleptomanía esclarecedora\n %c[0,81,63,22] • %c[0,209,172,56]El artefacto capta las frecuencias de los paquetes y envía energía para iluminarlos\n %c[0,81,63,22] • %c[0,209,172,56]Ilumina los alijos y los objetos que emiten señal al receptor de RF\n %c[0,81,63,22] • %c[0,209,172,56]La luz es muy tenue y apenas se ve de día, así que se recomienda buscar de noche\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna forma</text>
+  </string>
+  <string id="st_pba_af_tapeworm_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Aturdidor\n %c[0,81,63,22] • %c[0,209,172,56]La Tenia podrá aturdir al monstruo más cercano si este se encuentra en un radio de 2 metros del artefacto.\n %c[0,81,63,22] • %c[0,209,172,56]Ser golpeado por un monstruo o un stalker los aturdirá\n %c[0,81,63,22] • %c[0,209,172,56]El enemigo afectado estará aturdido durante 3 segundos\n %c[0,81,63,22] • %c[0,209,172,56]Mientras está aturdido, el enemigo quedará incapacitado para luchar y no atacará\n %c[0,81,63,22] • %c[0,209,172,56]Tiene un tiempo de recarga de 6 segundos entre uso y uso\n %c[0,81,63,22] • %c[0,209,172,56]Cada artefacto extra añade 2 segundos al efecto\n %c[0,81,63,22] • %c[0,209,172,56]Recibir daños por tu cuenta (por ejemplo, daño de caída) hará que el artefacto se descargue. No te hagas daño y mantente a salvo</text>
+  </string>
+  <string id="st_pba_af_moh_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Hiperversidad culinaria\n %c[0,81,63,22] • %c[0,209,172,56]Convierte la energía de la carne de mutante cruda en habilidades especiales\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos extra o comer la misma carne muchas veces no hacen que se acumule el efecto\n %c[0,81,63,22] • %c[0,209,172,56]Dura 1 minuto, comer otra carne de mutante distinta anula el tiempo anterior y se reinicia\n \n %c[d_orange]Tabla de efectos: \n %c[0,192,71,221] - Carne de carne: %c[ui_gray_3]1 %/s de regeneración de salud, 33 % de penalización de daño por balas\n %c[0,192,71,221] - Carne de jabalí: %c[ui_gray_3]25 % de reducción de daño cuerpo a cuerpo\n %c[0,192,71,221] - Carne de perro: %c[ui_gray_3]Ligera cura de hemorragia, 1 %/s de regeneración psíquica\n %c[0,192,71,221] - Carne de pseudoperro: %c[ui_gray_3]2 %/s de regeneración psíquica, 25 % de penalización de daño psíquico\n %c[0,192,71,221] - Carne de chupasangre: %c[ui_gray_3]Serás invisible hasta disparar o golpear a un enemigo, cura de hemorragia moderada\n %c[0,192,71,221] - Carne de psicovampiro: %c[ui_gray_3]Serás invisible hasta disparar o golpear a un enemigo, 5 %/s de regeneración psíquica\n %c[0,192,71,221] - Carne de snork: %c[ui_gray_3]50 % de reducción de daño por radiación, 5 %/s de regeneración de resistencia, 5 mSv/s de cura de radiación, gran reducción de la saciedad\n %c[0,192,71,221] - Carne de quimera: %c[ui_gray_3]2 %/s de regeneración de salud, 10 %/s de reducción del daño por radiación\n %c[0,192,71,221] - Carne de merodeador: %c[ui_gray_3]33 % de reducción del daño por anomalías químicas/ígneas/eléctricas, campos incluidos\n %c[0,192,71,221] - Carne de roedor: %C[ui_gray_3]20 % de aumento de velocidad, 20 % de penalización de daño cuerpo a cuerpo</text>
+  </string>
+  <string id="st_pba_af_serofim_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Lluvia de renacimiento \n %c[0,81,63,22] • %c[0,209,172,56]Al recibir un golpe mortal, el artefacto se destruirá y el jugador resucitará\n %c[0,81,63,22] • %c[0,209,172,56]Se restaurará el 50 % de la salud, se eliminarán todos los perjuicios y se concederán 5 segundos de inmunidad\n %c[0,81,63,22] • %c[0,209,172,56]Al resucitar, tirarás tu arma actual y verás mal\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_elektron_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Crank: Alto voltaje\n %c[0,81,63,22] • %c[0,209,172,56]Entrar en anomalías electro recargará del todo las pilas de todos los dispositivos activos del jugador\n %c[0,81,63,22] • %c[0,209,172,56]Recarga una cantidad aleatoria de dispositivos y pilas combinados en el inventario\n %c[0,81,63,22] • %c[0,209,172,56]Da un esprint infinito durante un tiempo\n %c[0,81,63,22] • %c[0,209,172,56]A veces, el placer de estar cargado es demasiado para contenerlo, lo que te hace gritar un poco más entusiasmado de la cuenta\n %c[0,81,63,22] • %c[0,209,172,56]No se acumula de ninguna manera</text>
+  </string>
+  <string id="st_pba_af_kogot_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]Sed de sangre\n %c[0,81,63,22] • %c[0,209,172,56]10 % de aumento del daño cuerpo a cuerpo\n %c[0,81,63,22] • %c[0,209,172,56]Efecto vampiro: El 3,5 % del nuevo daño cuerpo a cuerpo se convierte en salud del jugador\n %c[0,81,63,22] • %c[0,209,172,56]Al matar a ciertos mutantes, aparecerán trozos de carne cruda a su alrededor\n %c[0,81,63,22] • %c[0,209,172,56]Se acumula con muchos artefactos</text>
+  </string>
+  <string id="st_pba_af_dragon_eye_perk">
+    <text>%c[0,209,172,56]Ventaja: %c[d_orange]La vieja ultraviolencia\n %c[0,81,63,22] • %c[0,209,172,56]5 % de probabilidad de que un disparo sea explosivo\n %c[0,81,63,22] • %c[0,209,172,56]Al matar a un PNJ o un mutante con un disparo explosivo, este explotará de forma violenta\n %c[0,81,63,22] • %c[0,209,172,56]La explosión creará tripas y trozos de carne y dañará a cualquiera que esté en su radio\n %c[0,81,63,22] • %c[0,209,172,56]Se recomienda discreción\n %c[0,81,63,22] • %c[0,209,172,56]Los artefactos múltiples aumentan la probabilidad de explosión</text>
+  </string>
+</string_table>

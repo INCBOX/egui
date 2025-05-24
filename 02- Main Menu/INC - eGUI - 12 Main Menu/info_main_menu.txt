@@ -1,0 +1,10 @@
+		
+		UPDATE May.28.24
+		moved "ui_options.script" to resc
+		
+		BEFORE V.0.6.2
+		vanilla "ui_options.script" is added, some modpacks decided to disable "DEFAULT" button.
+		
+		added "Jabbers Soulslike" toggle, does not require main addon.
+		soulslike_ui_mm_gamemode.xml
+		soulslike_ui_mm_gamemode_16.xml

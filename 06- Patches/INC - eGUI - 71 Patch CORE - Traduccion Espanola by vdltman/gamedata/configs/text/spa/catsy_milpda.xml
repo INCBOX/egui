@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<string_table>
+    <string id="st_pda_mil_name">
+        <text>PDA militar</text>
+    </string>
+    <string id="st_pda_mil_descr">
+        <text>Un dispositivo electrónico de bolsillo concebido para englobar las funciones básicas y más esenciales de un ordenador. La PDA es esencial para intercambiar información a diario. Viene con un módulo GPS preinstalado para proporcionar al usuario información sobre la geolocalización y la hora.\n \nEste sofisticado modelo fue diseñado por una entidad desconocida para su uso por militares encubiertos u agentes de ONG, e incluye un módulo criptográfico que permite al usuario infiltrarse en muchas de las redes privadas seguras de la Zona, desvelando la ubicación aproximada de los escuadrones enemigos que operan en la zona.\n \n
+        %c[ui_gray_3]PROPIEDADES:\n
+		%c[d_blue] • %c[ui_gray_2] Alto consumo energético\n
+        %c[d_purple] • %c[ui_gray_2] Muestra la ubicación de todos los escuadrones cercanos\n
+        </text>
+    </string>
+    <string id="ui_mcm_menu_milpda">
+        <text>PDA militar</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_uninstall">
+        <text>Desinstalar PDA militar</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_uninstall_desc">
+        <text>Marcar esto eliminará todas las copias de la PDA militar del inventario del jugador.</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_add_recipe">
+        <text>Añadir receta de fabricación</text>
+    </string>
+    <string id="ui_mcm_milpda_gen_add_recipe_desc">
+        <text>Si se activa, se añadirá una receta de fabricación para la PDA militar. Puede que tengas que guardar y reiniciar el juego para que surta efecto.</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_enabled">
+        <text>Activar la lista negra personalizada para las facciones a continuación</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_army">
+        <text>No mostrar stalkers militares</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_bandit">
+        <text>No mostrar stalkers bandidos</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_csky">
+        <text>No mostrar stalkers de Cielo Despejado</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_dolg">
+        <text>No mostrar stalkers del Deber</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_ecolog">
+        <text>No mostrar stalkers ecologistas</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_freedom">
+        <text>No mostrar stalkers de Libertad</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_killer">
+        <text>No mostrar stalkers mercenarios</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_monolith">
+        <text>No mostrar stalkers del Monolito</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_zombied">
+        <text>No mostrar stalkers zombificados</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_greh">
+        <text>No mostrar stalkers del Pecado</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_isg">
+        <text>No mostrar stalkers del UNISG</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_renegade">
+        <text>No mostrar stalkers Renegados</text>
+    </string>
+    <string id="ui_mcm_milpda_facblacklist_stalker">
+        <text>No mostrar stalkers solitarios</text>
+    </string>
+    <string id="ui_mcm_menu_milpdagen">
+        <text>Ajustes</text>
+    </string>
+    <string id="ui_mcm_menu_facblacklist">
+        <text>Lista negra</text>
+    </string>
+    <string id="ui_mcm_menu_cfg_device_pda_1">
+        <text>PDA 1.0</text>
+    </string>
+    <string id="ui_mcm_menu_cfg_device_pda_2">
+        <text>PDA 2.0</text>
+    </string>
+    <string id="ui_mcm_menu_cfg_device_pda_3">
+        <text>PDA 3.1</text>
+    </string>
+    <string id="ui_mcm_menu_cfg_device_pda_milspec">
+        <text>PDA militar </text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_kiltrak">
+        <text>Activar KilTrak</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_kiltrak_desc">
+        <text>Activar compatibilidad con la función de seguimiento de bajas, originalmente basada en el complemento Kill Tracker de Ishmaeel.</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_getkiltrak">
+        <text>Descárgate el Kill Tracker de Ishmaeel aquí:\n\nhttps://www.moddb.com/mods/stalker-anomaly/addons/kiltrak</text>
+    </string>
+    <string id="ui_mcm_milpda_cfg_device_pda_1_enabled">
+        <text>Personalizar visibilidad de puntos del mapa para PDA 1.0</text>
+    </string>
+    <string id="ui_mcm_milpda_cfg_device_pda_2_enabled">
+        <text>Personalizar visibilidad de puntos del mapa para PDA 2.0</text>
+    </string>
+    <string id="ui_mcm_milpda_cfg_device_pda_3_enabled">
+        <text>Personalizar visibilidad de puntos del mapa para PDA 3.1</text>
+    </string>
+    <string id="ui_mcm_milpda_cfg_device_pda_milspec_enabled">
+        <text>Personalizar visibilidad de puntos del mapa para PDA militar</text>
+    </string>
+
+    <string id="ui_mcm_milpda_show_f">
+        <text>Mostrar puntos en el mapa para stalkers amigos</text>
+    </string>
+    <string id="ui_mcm_milpda_show_n">
+        <text>Mostrar puntos en el mapa para stalkers neutrales</text>
+    </string>
+    <string id="ui_mcm_milpda_show_e">
+        <text>Mostrar puntos en el mapa para stalkers enemigos</text>
+    </string>
+    <string id="ui_mcm_milpda_show_k">
+        <text>Mostrar puntos en el mapa para cadáveres</text>
+    </string>
+    <string id="ui_mcm_milpda_obeybl">
+        <text>Usar la lista negra de la facción</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_debuglogs">
+        <text>Activar registros de depuración</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_debuglogs_desc">
+        <text>Si se activa, el script petará la consola con muchas pruebas de lo que está haciendo. Normalmente debería estar desactivado.</text>
+    </string>
+<!-- Added in 1.4 -->
+    <string id="st_kiltrak_bodyof">
+        <text>cuerpo de</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_bodyicon">
+        <text>Estilo de icono para tus bajas (o las de tu escuadrón)</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_whtx">
+        <text>X blanca</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_skul">
+        <text>Calavera grande</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_sdot">
+        <text>Puntito azul</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_mdot">
+        <text>Punto azul</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_ldot">
+        <text>Punto gordo azul</text>
+    </string>
+<!-- Added in 1.5 -->
+    <string id="st_kiltrak_unidbody">
+        <text>cuerpo no identificado</text>
+    </string>
+    <string id="st_milpda_delete_marker">
+        <text>Quitar marcador de baja</text>
+    </string>
+<!-- Added in 1.6 -->
+    <string id="st_kiltrak_killedby">
+        <text>asesinado por</text>
+    </string>
+<!-- Added in 1.7 -->
+    <string id="ui_mcm_milpda_milpdagen_autoclear">
+        <text>Quitar automáticamente cuerpos al interactuar</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_autoclear_desc">
+        <text>Si se activa, el Kill Tracker quitará automáticamente los marcadores de cuerpos cuando los saquees o interactúes con ellos. Desactivar esto dejará los marcadores en el mapa hasta que los borres tú manualmente o el cuerpo desaparezca.</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_tracking_mode">
+        <text>Modo del Kill Tracker</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_tracking_mode_desc">
+        <text>Establece el modo de operación del Kill Tracker.\nDesactivado: el Kill Tracker está desactivado.\nJugador: el Kill Tracker solo mostrará tus bajas\nEscuadrón del jugador: el Kill Tracker también mostrará las bajas de los compañeros\nTodos: se mostrarán los cadáveres independientemente de quién o qué los haya matado. Las bajas que no sean del jugador o su escuadrón siempre aparecerán como puntos azules.</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_trkmode_all">
+        <text>Todos</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_trkmode_you">
+        <text>Jugador</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_trkmode_cmp">
+        <text>Escuadrón del jugador</text>
+    </string>
+    <string id="ui_mcm_lst_milpda_trkmode_off">
+        <text>Desactivado</text>
+    </string>
+    <string id="ui_mcm_milpda_milpdagen_getpaw">
+        <text>Descárgate Personal Adjustable Waypoint aquí:\n\nhttps://www.moddb.com/mods/stalker-anomaly/addons/personal-adjustable-waypoint-for-anomaly-151-152-and-gamma</text>
+    </string>
+
+<!-- Added in 1.7.4 -->
+
+    <string id="ui_mcm_milpda_milpdagen_bodyicon_other">
+        <text>Estilo de icono para bajas de otros</text>
+    </string>
+
+    <string id="ui_mcm_lst_milpda_upaw">
+        <text>Usar icono de PAW</text>
+    </string>
+
+    <string id="st_kiltrak_deadbody">
+        <text>Cadáver</text>
+    </string>
+
+    <string id="st_milpda_thezone">
+        <text>la Zona</text>
+    </string>
+
+<!-- Added in 1.7.5 -->
+
+
+    <string id ="ui_mcm_milpda_milpdagen_wipe_all">
+        <text>Borrar todos los datos de los marcadores de cuerpos</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_milpdagen_wipe_all_desc">
+        <text>Elimina todos los marcadores de cuerpos del mapa y borra la base de datos del Kill Tracker. Esto no tiene marcha atrás.</text>
+    </string>
+
+<!-- Added in 1.8 -->
+    <string id="ui_mcm_menu_progressive">
+        <text>Progresión</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_enabled">
+        <text>Visibilidad progresiva de escuadrón (recomendado)</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_enabled_desc">
+        <text>Si se activa, el jugador debe desbloquear la visibilidad de puntos de escuadrones en el mapa saqueando PDA de sus cadáveres y consiguiendo acceso a su red. Por defecto, las PDA de stalkers de mayor rango proporcionan más progreso para desbloquear el acceso.\n \nSigue siendo necesaria una PDA compatible que pueda mostrar puntos en el mapa amigos, neutrales u hostiles (según corresponda).</text>
+    </string>
+
+    <string id="ui_mcm_prog_comm_descr">
+        <text>En este menú puedes personalizar la cantidad de datos de PDA que deben reunirse para desbloquear la visibilidad de puntos de escuadrones en el mapa para cada facción, así como el progreso obtenido al saquear PDA de PNJ de cada rango.</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_army">
+        <text>Militares</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_bandit">
+        <text>Bandidos</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_csky">
+        <text>Cielo Despejado</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_dolg">
+        <text>Deber</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_ecolog">
+        <text>Ecologistas</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_freedom">
+        <text>Libertad</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_killer">
+        <text>Mercenarios</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_monolith">
+        <text>Monolito</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_greh">
+        <text>Pecado</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_isg">
+        <text>UNISG</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_renegade">
+        <text>Renegados</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_stalker">
+        <text>Solitarios</text>
+    </string>
+
+    <string id="ui_mcm_prog_rank_descr">
+        <text>Progreso obtenido en función del rango del stalker que soltó la PDA:</text>
+    </string>
+
+    <string id="ui_mcm_milpda_progressive_novice">
+        <text>Novato</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_trainee">
+        <text>Aprendiz</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_experienced">
+        <text>Curtido</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_professional">
+        <text>Profesional</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_veteran">
+        <text>Veterano</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_expert">
+        <text>Experto</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_master">
+        <text>Maestro</text>
+    </string>
+    <string id="ui_mcm_milpda_progressive_legend">
+        <text>Leyenda</text>
+    </string>
+
+    <string id="st_mapspot_access_prog">
+        <text>Con los datos de la PDA de este stalker de %s, has avanzado en el acceso a los datos GPS de %s. Progreso total: %.2f%% (%s/%s)</text>
+    </string>
+
+    <string id="st_mapspot_access_unlock">
+        <text>Los datos de la PDA de este stalker de %s te han dado el empujón que necesitabas para entrar en la red de su facción. Ahora tienes acceso a datos GPS que te permiten ver la ubicación de los escuadrones de %s usando cualquier PDA compatible.</text>
+    </string>
+
+<!-- Added in 1.8.1 -->
+
+    <string id="st_mapspot_access_lost">
+        <text>La facción %s debe haber cambiado sus códigos de acceso a la red, porque has perdido la capacidad de ver sus escuadrones en el mapa. Tendrás que encontrar nuevas PDA de %s para recuperar el acceso a sus datos GPS.</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_access_resets">
+        <text>El acceso a la red es temporal</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_access_resets_desc">
+        <text>Si se activa, la intrusión en la red de otra facción de esta forma solo es temporal: pasado un tiempo, descubrirán la intrusión y cambiarán sus códigos de acceso, obligándote a recuperar el acceso de la misma forma. Esto se combina mejor con valores de desbloqueo bajos, creando un bucle regular.</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_only_enemy">
+        <text>Solo las facciones enemigas resetean el acceso</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_only_enemy_desc">
+        <text>Si se activa, las facciones neutrales no te echarán de su red una vez hayas conseguido acceso, pero las facciones enemigas lo harán.\n \nSi se desactiva, todas las facciones que no sean la del jugador terminarán revocándote el acceso.</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progessive_access_mode">
+        <text>Escala temporal para la duración del acceso</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progessive_access_mode_desc">
+        <text>El tiempo del juego es 6 veces más rápido que el tiempo real.</text>
+    </string>
+
+    <string id ="ui_mcm_lst_resetmode_gametime">
+        <text>Tiempo del juego</text>
+    </string>
+
+    <string id ="ui_mcm_lst_resetmode_realtime">
+        <text>Tiempo real</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_access_time">
+        <text>Duración del acceso a la red</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_progressive_access_unit">
+        <text>Unidad de tiempo utilizada para la duración del acceso</text>
+    </string>
+
+    <string id="ui_mcm_lst_timeunit_day">
+        <text>día</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_days">
+        <text>días</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_hour">
+        <text>hora</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_hours">
+        <text>horas</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_minute">
+        <text>minuto</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_minutes">
+        <text>minutos</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_second">
+        <text>segundo</text>
+    </string>
+    <string id="ui_mcm_lst_timeunit_seconds">
+        <text>segundos</text>
+    </string>
+
+<!-- Added in 1.9.5 -->
+
+    <string id ="ui_mcm_milpda_milpdagen_show_monsters">
+        <text>Mostrar también cadáveres de mutantes en el mapa</text>
+    </string>
+
+    <string id ="ui_mcm_milpda_milpdagen_show_monsters_desc">
+        <text>Si se activa, el Kill Tracker también mostrará los cadáveres de los mutantes en el mapa.</text>
+    </string>
+</string_table>

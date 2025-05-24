@@ -1,0 +1,3 @@
+		
+		
+		addon "Slugler's & Andtheherois's No old ammo in wheel" disabled to fix cause blank ammo/companion wheel.

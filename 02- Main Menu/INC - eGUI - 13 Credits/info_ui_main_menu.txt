@@ -1,0 +1,3 @@
+		
+		
+		to prevent conflicts with MCM and it's updates, "ui_main_menu.script" is removed and added "modxml_credit_button_patcher_mcm.script" to add CREDITS button. this feature will require modded exes.

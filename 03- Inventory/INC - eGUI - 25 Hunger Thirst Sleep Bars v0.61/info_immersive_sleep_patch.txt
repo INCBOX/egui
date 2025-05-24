@@ -1,0 +1,8 @@
+		
+		
+
+		resc info
+		htsui version "actor_status_sleep.script" is moved to resc.
+		
+		used "Imersive Sleep Modern UI" PATCH
+		added "actor_status_sleep.script" for missing sleep bar.

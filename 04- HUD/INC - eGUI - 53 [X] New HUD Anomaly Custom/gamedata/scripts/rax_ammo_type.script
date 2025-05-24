@@ -1,0 +1,193 @@
+--[[
+SImple ammo type indicator.
+30APR2023
+Anomaly game scripts used as reference: item_weapon.script actor_status.script by Tronex
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+Author: RavenAscendant
+--]]
+
+--[[
+Reference for the xml
+The UI is a 1024x768 coordinate space regardless of your monitor settings. You set something to 1050 and it will be off screen.
+Color is RGB and a is transparency. where 255 is opaque and 0 invisible 
+
+This is the list of fonts. it is hard coded in the engine. If you have a font change addon it just changed what these look like, this is still the list of eligiable names
+"arial"
+
+"medium"
+"small"
+
+"graffiti19"
+"graffiti22"
+"graffiti32"
+"graffiti50"
+
+"letterica16"
+"letterica18"
+"letterica25"
+
+"di"
+
+
+
+--]]
+
+--local error_text = "ERR" -- for testing
+local error_text = "" -- for if better to have nothing
+
+-- Update rate
+local tg_update = 0
+local tg_update_step = 500 --[ms] lower hud is more snappy, higher it uses less cpu time. 
+
+----------------------------------
+--	HUD 
+----------------------------------
+
+HUD = nil
+------- AmmoTypeHUD is built on the skeleton of UIIndicators from actor_status.script
+function activate_hud()
+	RegisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	RegisterScriptCallback("GUI_on_show",update_hud)
+	RegisterScriptCallback("GUI_on_hide",update_hud)
+	RegisterScriptCallback("actor_on_weapon_reload",update_hud)
+	
+	
+	if HUD == nil then
+		HUD = AmmoTypeHUD()
+		get_hud():AddDialogToRender(HUD)
+	end
+	HUD:Update(true)
+end
+
+function deactivate_hud()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+	
+	UnregisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	UnregisterScriptCallback("GUI_on_show",update_hud)
+	UnregisterScriptCallback("GUI_on_hide",update_hud)
+	UnregisterScriptCallback("actor_on_weapon_reload",update_hud)
+
+end
+
+function update_hud()
+	if HUD ~= nil then
+		HUD:Update(true)
+	end
+end
+
+
+function actor_on_net_destroy()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+end
+
+function on_console_execute(name)
+	if name == "hud_draw" and HUD then
+		HUD:Update(true)
+	end
+end
+
+-------
+class "AmmoTypeHUD" (CUIScriptWnd)
+
+function AmmoTypeHUD:__init() super()
+	self.ini = ini_file_ex("plugins\\rax_ammo_type\\ammo.ltx")
+	self.ratio  = utils_xml.screen_ratio()
+	self._tmr   = time_global()
+	self.lastwpn = 0
+	self.lastammo = 0
+	self.lastslot = 0
+	self:InitControls()
+end
+
+function AmmoTypeHUD:__finalize()
+end
+
+function AmmoTypeHUD:InitControls()
+	local xml  = CScriptXmlInit()
+	xml:ParseFile("rax_ammo_type.xml")
+
+	self.dialog = xml:InitStatic("ammo", self)
+	self.dialog:Show(false)
+	
+	self:Refresh()
+
+	
+end
+
+function AmmoTypeHUD:Clear()
+	self.dialog:Show(false)
+end
+
+function AmmoTypeHUD:Refresh()
+	self:Update(true)
+end
+
+function AmmoTypeHUD:Update(force)
+	CUIScriptWnd.Update(self)
+	force = force or db.actor:active_slot() ~= self.lastslot
+	local tg = time_global()
+	if force then
+		self._tmr = tg - 1
+	end
+	if self._tmr >= tg then
+
+		return
+	else
+
+		self._tmr = tg + tg_update_step
+	end
+
+	local wpn = db.actor:active_item()
+
+	
+	-- Hide HUD when not a weapon or a weapon with no ammo or the game hud is hidden or we dead
+	if not (wpn and  IsWeapon(wpn) and (not IsItem("fake_ammo_wpn",wpn:section())) and main_hud_shown() and db.actor:alive())   then
+		self.dialog:Show(false)
+		return
+	end
+	local id        = wpn:id()
+	local section   = wpn:section()
+	local ammo_type = wpn:get_ammo_type()+1 --the equipped ammo, ie ammo in the gun
+
+	 
+	if id == self.lastwpn and ammo_type == self.lastammo then -- if no change don't update
+		return
+	end
+	
+
+
+	local text = ""
+	local ammo_list = utils_item.get_ammo(section, id)
+	local ammo_sec = ammo_list and ammo_list[ammo_type] or ""
+	local snip = string.find(ammo_sec, "_bad") or string.find(ammo_sec, "_verybad") or 0
+	
+	local base_sec = string.sub(ammo_sec,1,-(1+snip)) or ""
+	text = self.ini:r_value("ammo", base_sec,0 ) or error_text--.." " ..base_sec.." "..snip.." "..ammo_sec.." "..ammo_type--
+	
+	self.dialog:TextControl():SetText(text)
+	self.lastwpn = id
+	self.lastslot = db.actor:active_slot()
+	self.dialog:Show(true)
+
+end
+
+
+
+
+function on_game_start()
+
+	RegisterScriptCallback("actor_on_first_update",activate_hud)
+
+end
+
+
+
+
+
+

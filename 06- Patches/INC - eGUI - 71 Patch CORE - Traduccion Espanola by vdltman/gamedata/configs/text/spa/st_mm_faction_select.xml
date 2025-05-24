@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<string_table>
+
+	<!-- Description - Factions -->
+	<string id="st_faction_stalker">
+		<text>Solitario </text>
+	</string>
+	<string id="st_faction_stalker_desc">
+		<text>%c[0,150,150,150]Los solitarios, o acechadores libres, prefieren mantenerse al margen de las distintas facciones que operan en la Zona.\n
+		La gran mayoría de los habitantes de la Zona pertenecen a esta hermandad no oficial, y eligen vivir la vida sin dejarse atrapar por los ideales de los demás.\n
+		%c[0,255,255,255]Recomendado para nuevos jugadores.</text>
+	</string>
+	<string id="st_faction_bandit">
+		<text>Bandidos </text>
+	</string>
+	<string id="st_faction_bandit_desc">
+		<text>%c[0,150,150,150]Los forajidos de Chernóbil, ellos saben que aunque Ucrania y Bielorrusia controlan la Zona sobre el papel, en realidad es un lugar sin ley.\n
+		Los bandidos son asesinos, ladrones y otros miembros del submundo criminal que se aprovechan de ello, abusando del estado anárquico de la Zona para esconderse de la ley y continuar con sus negocios ilícitos.</text>
+	</string>
+	<string id="st_faction_dolg">
+		<text>Deber </text>
+	</string>
+	<string id="st_faction_dolg_desc">
+		<text>%c[0,150,150,150]El Deber es una facción paramilitar que libra una guerra contra la propia Zona, considerándola una incubadora de horrores incalculables que amenazarían al mundo entero si no se controlan.\n
+		Llevan mucho tiempo en feroz conflicto con la facción "Libertad" debido a sus ideales opuestos.</text>
+	</string>
+	<string id="st_faction_freedom">
+		<text>Libertad </text>
+	</string>
+	<string id="st_faction_freedom_desc">
+		<text>%c[0,150,150,150]La Libertad son anarquistas y temerarios que luchan por un acceso no regulado a la Zona, considerándola un milagro que hay que compartir y, en consecuencia, encontrándose en constante conflicto con la facción "Deber".</text>
+	</string>
+	<string id="st_faction_army">
+		<text>Militares </text>
+	</string>
+	<string id="st_faction_army_desc">
+		<text>%c[0,150,150,150]Los militares se refieren a las tropas internas del gobierno ucraniano, los destacamentos Spetsnaz y los stalkers comisionados.\n
+		Adoptando un enfoque de línea dura para asegurar la frontera entre la Zona y el mundo exterior, son conocidos por disparar a todo el personal no sancionado en el acto.</text>
+	</string>
+	<string id="st_faction_ecolog">
+		<text>Ecologistas </text>
+	</string>
+	<string id="st_faction_ecolog_desc">
+		<text>%c[0,150,150,150]Patrocinados por el gobierno ucraniano, los Ecologistas son un cuerpo oficial de científicos y ayudantes de campo contratados que investigan la Zona, con la esperanza de aprovechar su potencial para el bien de la humanidad.\n
+		%c[0,255,255,255]Recomendado para jugadores pacíficos.</text>
+	</string>
+	<string id="st_faction_killer">
+		<text>Mercenarios </text>
+	</string>
+	<string id="st_faction_killer_desc">
+		<text>%c[0,150,150,150]Los mercenarios de la Zona suelen pertenecer a una compañía semilibre de combatientes profesionales.\n
+		Estos stalkers irregulares proceden de todo tipo de nacionalidades y orígenes, y venden sus servicios como soldados veteranos a cualquiera que esté dispuesto a pagar.\n
+		Se desconoce quién les contrató para entrar en la Zona, o por qué tienen intereses aquí.</text>
+	</string>
+	<string id="st_faction_monolith">
+		<text>Monolito </text>
+	</string>
+	<string id="st_faction_monolith_desc">
+		<text>%c[0,150,150,150]Los Monolitos son un culto fanático hostil a todos excepto a los suyos.\n
+		A pesar de la destrucción de la Conciencia-C, recientemente han experimentado un preocupante aumento de su número. Desde entonces, han retomado muchos de sus antiguos territorios.\n
+		%c[0,255,255,255]Recomendado solo para jugadores avanzados.</text>
+	</string>
+	<string id="st_faction_csky">
+		<text>Cielo Despejado </text>
+	</string>
+	<string id="st_faction_csky_desc">
+		<text>%c[0,150,150,150]Clear Sky es una organización científica y paramilitar independiente, dedicada a aumentar el conocimiento general de la Zona y a salvaguardar sus secretos más mortíferos.\n
+		Aunque el grupo se derrumbó tras una expedición fallida al CNPP hace siete años, los pocos supervivientes que quedaron acabaron por reconstruir la facción hasta su antigua estatura.\n
+		%c[0,255,255,255]Recomendado para Jugadores Nuevos</text>
+	</string>
+	<string id="st_faction_renegade">
+		<text>Renegados </text>
+	</string>
+	<string id="st_faction_renegade_desc">
+		<text>%c[0,150,150,150]Los Renegados son los stalkers más despreciables de la Zona.\n
+		Cada miembro ha cometido transgresiones tan graves que ningún grupo los acoge, e incluso los bandidos apenas los toleran.\n
+		%c[0,255,255,255]Recomendado solo para Jugadores Expertos.</text>
+	</string>
+	<string id="st_faction_greh">
+		<text>Sin </text>
+	</string>
+	<string id="st_faction_greh_desc">
+		<text>%c[0,150,150,150]Los "stalker oscuros" son un culto extremadamente hostil de acechadores mutantes que creen en la esencia divina de la Zona.\n
+		Descritos como zombificados, mutados o poseídos, los "stalkers oscuros" de la ominosa facción Pecado pretenden expandir la Zona por todo el mundo, y no se detendrán ante nada para lograr su ambicioso objetivo.\n
+		%c[0,255,255,255]Recomendado solo para jugador Profesionales.</text>
+	</string>
+	<string id="st_faction_isg">
+		<text>UNISG </text>
+	</string>
+	<string id="st_faction_isg_desc">
+		<text>%c[0,150,150,150]El Grupo Científico Internacional de las Naciones Unidas es una unidad de fuerzas especiales muy interesada en la Zona.\n
+		Sea cual sea su objetivo, sus agentes de campo están lejos de estar indefensos, y la mayoría prefiere disparar primero que arriesgarse a que se filtre información sobre sus movimientos.\n
+		%c[0,255,255,255]Recomendado solo para Buenos Jugadores.</text>
+	</string>
+	<string id="st_faction_zombied">
+		<text>Zombified</text>
+	</string>
+	<string id="st_faction_zombied_desc">
+		<text>%c[0,150,150,150]Cerebrosssssss!!!\n
+		Los acechadores zombificados son cáscaras descerebradas de su yo anterior reducidas a sus instintos animales más básicos y atacarán a casi cualquier cosa que se acerque demasiado.\n
+		%c[0,255,255,255]Recomendado para... Espera ¿cómo estas viendo esto?</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_box_faction_desc">
+		<text>
+			%c[0,150,150,150]%s descripción.
+		</text>
+	</string>
+	<string id="st_mm_box_icon_desc">
+		<text>
+			%c[0,150,150,150]La portada de tu personaje.
+		</text>
+	</string>
+	<string id="st_mm_list_map_desc">
+		<text>
+			%c[0,150,150,150]Elige la ubicación para comenzar tu partida.
+		</text>
+	</string>
+	<string id="st_mm_ck_reset_desc">
+		<text>
+			%c[0,150,150,150]Reiniciar el inventario.
+		</text>
+	</string>
+	<string id="st_mm_list_economy_desc">
+		<text>
+			%c[0,150,150,150]La dificultad Progresión tiene un gran impacto en la economía, que afecta a la progresión del jugador durante su viaje en la Zona.\n
+			Los aspectos afectados por esto van desde los precios de venta/compra con los comerciantes, los precios de reparación/mejora con los mecánicos, la rareza de los botines, el dinero y reputación recibidos al completar tareas y más.\n
+			%c[200,200,50,50]• %c[0,150,150,150]Puedes controlar cada uno de estos aspectos en tu partida en cualquier momento.\n
+			Ve a "Opciones Extra -> Dificultad de Progresión".
+		</text>
+	</string>
+	<string id="st_mm_list_difficulty_desc">
+		<text>
+			%c[0,150,150,150]La dificultad del juego afecta a aspectos relacionados con el jugador como la protección frente a las fuentes de daño, la pérdida de resistencia y el peso de carga. Además de aspectos extra como la privación de agua y sueño.\n
+			%c[200,200,50,50]• %c[0,150,150,150]Puedes controlar cada uno de estos aspectos en tu partida en cualquier momento.\n
+			Ve a "Opciones Extra -> Dificultad de Jugabilidad".
+		</text>
+	</string>
+	<string id="st_mm_ck_story_desc">
+		<text>
+			%c[0,150,150,150]El modo Historia, cuando está activo, permite al jugador experimentar un conjunto único de misiones dinámicas y basadas en la historia.\n 
+			Las misiones argumentales como "Leyenda viviente", "Pecado mortal" y "Operación Afterglow" solo están disponibles para las facciones Solitarios, Deber, Libertad, Ecologistas, Mercenarios y Cielo despejado.\n
+			Las misiones dinámicas, sin embargo, pueden ser disfrutadas por todas las facciones jugables. En ambos casos, habla con el líder de tu facción para comenzarlas. ¡Diviértete!\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Warfare.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Supervivencia.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Azazel.
+		</text>
+	</string>
+	<string id="st_mm_ck_drx_desc">
+		<text>
+			%c[0,150,150,150]Un conjunto dinámico y enlazado de tareas variadas que te llevará por toda la Zona.\n
+			Rejugabilidad infinita; las partidas nunca serán iguales aunque vuelvas a jugar con la misma facción.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo historia.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Azazel.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_desc">
+		<text>
+			%c[0,150,150,150]El modo Ironman es una función que eliminará tus partidas guardadas al morir.\n
+			Eres libre de realizar tantas salvaciones como desees, pero morir supondrá la eliminación de todas las salvaciones realizadas con este personaje.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_aim_desc">
+		<text>
+			%c[0,150,150,150]Punto de Mira de IA Hardcore es una función que maximiza la previsibilidad de la puntería de la IA, haciendo más difícil para el jugador esquivar los golpes mientras se mueve.
+		</text>
+	</string>
+	<string id="st_mm_ck_survival_desc">
+		<text>
+			%c[0,150,150,150]El modo Supervivencia es una característica que sustituye todos los spawns por Zombis.\n
+			Estas hordas llegarán hasta tu ubicación: ¡prepárate! ¡A ver cuánto tiempo puedes sobrevivir!\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Warfare.
+		</text>
+	</string>
+	<string id="st_mm_ck_azazel_mode_desc">
+		<text>
+			%c[0,150,150,150]En el modo Azazel, la muerte no es el final.\n
+			Al igual que el demonio Azazel, poseerás un nuevo cuerpo cuando mueras, adoptando la forma de otro stalker cualquiera que exista realmente en la Zona.\n
+			Si tienes compañeros, te convertirás en uno de ellos. Esta característica complementa muy bien los modos Ironman y/o Supervivencia.\n
+			%c[200,200,50,50]• %c[0,150,150,150]Todos los mapas estaran desbloqueados en este modo.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Historia.\n
+		</text>
+	</string>
+	<string id="st_mm_ck_warfare_desc">
+		<text>
+			%c[0,150,150,150]Este modo otorga más libertad al sistema A-Life de Stalker, creando una Zona más dinámica.
+			La propiedad de bases y territorios por parte de las facciones es más propensa a cambiar. Los médicos, comerciantes y mecánicos ahora también son reemplazables.\n
+			También tienes la posibilidad de liderar tu facción y ayudarla a hacerse con el control de las áreas circundantes, logrando el dominio de la Zona.\n
+			%c[200,150,50,200]• %c[0,150,150,150]¡Comanda a tu facción a traves del GPS del PDA!\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Historia.\n
+			%c[200,200,50,50]• %c[0,150,150,150]No compatible con el modo Supervivencia.
+		</text>
+	</string>
+	<string id="st_mm_ck_campfire_desc">
+		<text>
+			%c[0,150,150,150](DEJAR DESMARCADO - El mod Better Campfire Saves se encarga de esto)\n
+			En el modo de guardado de hoguera, no puedes guardar tu progreso a menos que estés cerca de una hoguera. Las hogueras están repartidas por toda la zona y son lugares de reunión de acechadores de todo el mundo.\n
+			%c[200,50,200,50]• %c[0,150,150,150]Todos los modos de guardado hardcore son compatibles entre sí.
+		</text>
+	</string>
+	<string id="st_mm_ck_conditions_desc">
+		<text>
+			%c[0,150,150,150]El modo Agonía te impedirá guardar tu progreso si estás:\n
+			%c[200,200,200,50]• %c[0,150,150,150]Herido\n
+			%c[200,200,200,50]• %c[0,150,150,150]Desangrandote\n
+			%c[200,200,200,50]• %c[0,150,150,150]Irradiado\n
+			%c[200,200,200,50]• %c[0,150,150,150]En combate con enemigos\n
+			%c[200,200,200,50]• %c[0,150,150,150]En circunstancias de una emisión o psi-tormenta\n
+			%c[200,50,200,50]• %c[0,150,150,150]Todos los modos HARDCORE son compatibles entre si.
+		</text>
+	</string>
+	<string id="st_mm_ck_routes_desc">
+		<text>
+			%c[0,150,150,150]Muchos niveles no son accesibles por defecto. Las rutas ocultas se pueden descubrir de diferentes maneras a lo largo de la partida.\n
+			Activando esta opción se desbloquearán todos los niveles al iniciar una nueva partida.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_lives_desc">
+		<text>
+			%c[0,150,150,150]Una función adicional para el modo Ironman que te permite establecer cuántas vidas tienes al principio de una nueva partida.\n
+			Cada vez que mueras, perderás una vida.\n
+			Una vez que te quedes sin vidas, se eliminarán todas las partidas guardadas.\n
+			%c[200,200,50,50]• %c[0,150,150,150]El modo Ironman debe estar activo.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_regen_desc">
+		<text>
+			%c[0,150,150,150]Una función adicional para el modo Ironman que permite establecer cuántos días se tardará en conceder una vida extra.\n
+			%c[200,200,50,50]• %c[0,150,150,150]Dormir no va a interferir el proceso.\n
+			%c[200,200,50,50]• %c[0,150,150,150]El modo Ironman debe estar activo.
+		</text>
+	</string>
+	<string id="st_mm_list_timer_desc">
+		<text>
+			%c[0,150,150,150]En el modo Temporizador, puedes guardar tu partida cada cierto tiempo.\n
+			Una vez guardada la partida, no podrás volver a guardarla hasta que termine el temporizador.\n
+			%c[200,50,200,50]• %c[0,150,150,150]Todos los modos "¡¡Hardcore!!" son compatibles entre sí.
+		</text>
+	</string>
+	
+	<!-- Static Text -->
+	<string id="st_mm_new_game_character">
+		<text>PERSONAJE</text>
+	</string>
+	<string id="st_mm_new_game_faction">
+		<text>SELECCIONAR FACCIÓN</text>
+	</string>
+	<string id="st_mm_new_game_icon">
+		<text>SELECCIONAR PORTADA</text>
+	</string>
+	<string id="st_mm_new_game_options">
+		<text>OPCIONES</text>
+	</string>
+	<string id="st_mm_new_game_inventory">
+		<text>INVENTARIO</text>
+	</string>
+	<string id="st_mm_new_game_loadout">
+		<text>EQUIPAMIENTO</text>
+	</string>
+	<string id="st_mm_new_game_name">
+		<text>NOMBRE:</text>
+	</string>
+	<string id="st_mm_new_game_faction_2">
+		<text>FACCIÓN:</text>
+	</string>
+	<string id="st_mm_new_game_money">
+		<text>DINERO:</text>
+	</string>
+	<string id="st_mm_new_game_points_left">
+		<text>Puntos restantes:</text>
+	</string>
+	<string id="st_mm_new_game_points_used">
+		<text>Puntos usados:</text>
+	</string>
+	<string id="ui_st_random_location">
+		<text>-Ubicación aleatoria-</text>
+	</string>
+	
+
+	<!-- Description elements -->
+	<string id="st_mm_new_game_relations">
+		<text>RELACIONES</text>
+	</string>
+	<string id="st_mm_new_game_description">
+		<text>DESCRIPCIÓN</text>
+	</string>
+	<string id="st_mm_new_game_points">
+		<text>Puntos</text>
+	</string>
+	<string id="st_mm_new_game_essential">
+		<text>Esencial</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_itm_desc_unknown">
+		<text>Sin información disponible</text>
+	</string>
+	
+	<!-- Options -->
+	<string id="st_cap_check_warfare">
+		<text>Warfare</text>
+	</string>
+	<string id="st_cap_check_drx">
+		<text>Misiones de DoctorX</text>
+	</string>
+	<string id="st_cap_check_campfire">
+		<text>Modo Fogata</text>
+	</string>
+	<string id="st_cap_check_conditions">
+		<text>Modo Agonía</text>
+	</string>
+	<string id="st_cap_list_timer">
+		<text>Modo Cronometrado</text>
+	</string>
+	<string id="st_cap_check_routes">
+		<text>Zona Accesible</text>
+	</string>
+	<string id="st_cap_list_hardcore_lives">
+		<text>Vidas de Ironman</text>
+	</string>
+	<string id="st_cap_list_hardcore_regen">
+		<text>Regenerador de Vidas</text>
+	</string>
+	<string id="st_cap_list_economy">
+		<text>Dificultad de Progresión</text>
+	</string>
+	<string id="st_cap_list_difficulty">
+		<text>Dificultad de Jugabilidad</text>
+	</string>
+	
+	<string id="st_econ_1">
+		<text>Turista</text>
+	</string>
+	<string id="st_econ_2">
+		<text>Saqueador</text>
+	</string>
+	<string id="st_econ_3">
+		<text>Superviviente</text>
+	</string>
+	
+	<string id="st_diff_1">
+		<text>Fácil</text>
+	</string>
+	<string id="st_diff_2">
+		<text>Medio</text>
+	</string>
+	<string id="st_diff_3">
+		<text>Difícil</text>
+	</string>
+	<string id="st_diff_4">
+		<text>HARDCORE/PESADILLA</text>
+	</string>
+	
+	<!--string id="st_diff_1">
+		<text>Novice</text>
+	</string>
+	<string id="st_diff_2">
+		<text>Stalker</text>
+	</string>
+	<string id="st_diff_3">
+		<text>Veteran</text>
+	</string>
+	<string id="st_diff_4">
+		<text>Master</text>
+	</string-->
+	
+	<string id="st_off">
+		<text>desactivado</text>
+	</string>
+	<string id="st_new_game_min">
+		<text>min.</text>
+	</string>
+	<string id="st_new_game_mins">
+		<text>mins.</text>
+	</string>
+	<string id="st_new_game_hour">
+		<text>hora</text>
+	</string>
+	<string id="st_new_game_hours">
+		<text>horas</text>
+	</string>
+	<string id="st_new_game_day">
+		<text>día</text>
+	</string>
+	<string id="st_new_game_days">
+		<text>días</text>
+	</string>
+	<string id="st_new_game_life">
+		<text>vida</text>
+	</string>
+	<string id="st_new_game_lives">
+		<text>vidas</text>
+	</string>
+	
+	<!-- Buttons -->
+	<string id="st_mm_btn_new_game_faction">
+		<text>FACCIÓN</text>
+	</string>
+	<string id="st_mm_btn_new_game_icon">
+		<text>PORTADA</text>
+	</string>
+	<string id="st_mm_btn_new_game_back">
+		<text>ATRAS</text>
+	</string>
+	<string id="st_mm_btn_new_game_submit">
+		<text>INICIAR</text>
+	</string>
+	<string id="st_mm_btn_new_game_rand">
+		<text>CONFIG. ALEATORIA</text>
+	</string>
+	
+	<!-- Discord -->
+	<string id="st_hardcore_lives_left">
+		<text>Vidas Restantes</text>
+	</string>
+	<string id="st_hardcore_lives_left_single">
+		<text>Vida Restante</text>
+	</string>
+	<string id="st_player_dead">
+		<text>Muerto</text>
+	</string>
+	<string id="st_main_menu">
+		<text>Menú Principal</text>
+	</string>
+	<string id="st_loading">
+		<text>Cargando</text> 
+	</string>
+	<string id="st_pause_menu">
+		<text>Menú de Pausa</text>
+	</string>
+	<string id="st_cap_check_freeplay">
+		<text>Modo Freeplay</text>
+	</string>
+	<string id="st_azazel_lives_possessed">
+		<text>Vidas poseídas</text>
+	</string>
+	<string id="st_azazel_lives_possessed_single">
+		<text>Vida poseída</text>
+	</string>
+	<string id="st_godmode">
+		<text>Modo Dios</text>
+	</string>
+</string_table>

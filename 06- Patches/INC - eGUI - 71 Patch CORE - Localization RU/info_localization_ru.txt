@@ -1,0 +1,4 @@
+		
+		
+		this module containts only placement of the texts for main menus and various sections.
+		text files are in module "01 Localization"

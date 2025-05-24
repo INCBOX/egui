@@ -1,0 +1,38 @@
+
+
+	added faction rank overlays, over enhanced gui inventory base.
+	ganedata\scripts\ui_inventory.script
+
+
+
+
+	\gamedata\configs\ui\ui_inventory.xml + ui_inventory_16.xml
+	
+
+		<community_overlay x="-38" y="0" width="398" height="154" stretch="1" />
+		<community_icon x="-280" y="28" width="25" height="32" stretch="1" />
+		<rank x="67" y="55" width="217" height="14">
+			<text align="l" font="letterica16" color="ui_3"/>
+		</rank>
+		<rank_icon x="86" y="52" width="37" height="47" stretch="1"/>
+	
+	
+
+	we're added "Knife Pistol in Binocular Slot" to prevent crashes "without main addon there is no crashes."
+	"Knife Pistol in Binocular Slot" code in \gamedata\configs\ui\ui_inventory.xml + ui_inventory_16.xml
+
+									<cell_5 x="540" y="220" width="133" height="76" stretch="1"><!--5 Binocular -->
+										<pic stretch="1" align="c" alignment="c"/>
+										<highlight stretch="1">
+											<texture>ui_inGame2_detector_highlighter</texture>
+										</highlight>
+										
+						[ACTIVATE CONDITION BAR FOR SLOT]
+										<bar x="11" y="75" width="116" height="3" horz="1" min="0" max="1" pos="0" stretch="1">
+											<progress stretch="1">
+												<texture r="142" g="149" b="149">ui_svui_condition_bar</texture>
+											</progress>
+										</bar>
+						[ENDS HERE]
+										
+									</cell_5>

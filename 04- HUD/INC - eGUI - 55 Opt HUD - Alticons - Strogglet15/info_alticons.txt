@@ -1,0 +1,28 @@
+		
+		CHANGELOG May.26.24
+		"Minimalist Companion UI" not used in "ui_hud.xml"
+		
+		
+		CHANGELOG V.6.2. and older
+		added "BoostFireWound.dds" in textures\ui\alticons\\BoostFireWound and updated script.
+		
+	--[[
+		
+		actor_status.indicators["FireWoundImmunity"]      = { index= 14	,typ= "booster"	,functor= {"actor_status","get_boost","FireWoundImmunity",true},     icon= "ui\\alticons\\BoostFireWound.dds"          ,background= "ui\\alticons\\bg2.dds"	,anim_icon= false	,anim_bk= false  ,anim_period= 5 }
+		
+	--]]
+	
+
+
+		
+	___________________________________________________________________________________________
+		
+		
+		added line in alticons.script for "hud icons timer" addon.
+		
+	--[[
+	
+		local time_xml = CScriptXmlInit()
+		time_xml:ParseFile("actor_menu.xml")
+		
+	--]]

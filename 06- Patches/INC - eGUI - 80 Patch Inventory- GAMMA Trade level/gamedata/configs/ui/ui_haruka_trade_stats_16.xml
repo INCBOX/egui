@@ -1,0 +1,9 @@
+<w>
+    <!-- Left side -->
+    <trader x="0" y="0" width="377" height="768" stretch="1">
+        <level x="7" y="64" width="217" height="16">
+			<text align="r" font="letterica18" color="ui_white"/>
+		</level>
+    </trader>
+    <!-- Right side -->
+</w>

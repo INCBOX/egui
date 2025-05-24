@@ -1,0 +1,14 @@
+UPDATE V2.5
+07/05/2021
+
+	* Adds a fix to solve a problem in DX8 and DX9.
+	* Main version is now dedicated to Vanilla Minimap and "IN" the Minimap circle..
+	* Adds an option to have Radar Bars "OUT" of the Vanilla Minimap circle.
+	* Adds a CP for Bart's Minimap.
+
+
+UPDATE V2.0
+11/18/2020
+
+	* New texture brighter for bars
+

@@ -1,0 +1,33 @@
+
+
+I've decided to work on that addon because i miss Call Of Tchernobyl's radar stealth bar and detection bar.
+
+Stealth bar and detection bar are back for Anomaly 1.5.1 !
+
+
+
+
+
+
+
+
+
+Setup instructions : (i advice to use a mod manager)
+
+Without mod manager, simply paste "gamedata" folder in your game's directory.
+
+See Changelog.txt
+
+You can find some Compatibility patches, _ CP_Bart's_Radars_Bars_With_VANILLA_MINIMAP_OUT and _ CP_Bart's_Radars_Bars_With_BART'S_MINIMAP.
+
+If you have some problems to use this addon, you can let me know a comment and i'd be delighted to respond.
+
+
+Enjoy !
+
+
+UPDATES :
+
+SEE CHANGELOG.TXT
+
+

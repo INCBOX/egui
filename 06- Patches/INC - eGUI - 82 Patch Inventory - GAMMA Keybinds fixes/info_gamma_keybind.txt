@@ -1,0 +1,4 @@
+		
+		
+		"BetterStatsBars" patch for "Gamma keybind fixes"
+		- "zz_ui_inventory_better_stats_bars.script"

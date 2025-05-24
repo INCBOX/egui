@@ -1,0 +1,107 @@
+function on_game_start()
+	RegisterScriptCallback("npc_on_net_spawn", showdot)
+	
+
+	
+
+	
+	RegisterScriptCallback("npc_on_hit_callback", FriendlyFire)
+	
+	RegisterScriptCallback("npc_on_death_callback",removedotsOnDeath)
+	
+	RegisterScriptCallback("npc_on_update",deletedot)
+
+    RegisterScriptCallback("npc_on_death_callback",add_dot)
+    RegisterScriptCallback("npc_on_use",remove_dot)
+    RegisterScriptCallback("monster_on_death_callback",add_dot)
+    RegisterScriptCallback("monster_on_actor_use_callback",remove_dot)
+end
+
+function removedotsOnDeath(npc, who)
+		local id = npc:id()
+		-- Need two calls to delete dot engine error
+		level.map_remove_object_spot(id, "friend_location", "")
+		level.map_remove_object_spot(id, "friend_location", "")
+		level.map_remove_object_spot(id, "neutral_location", "")
+		level.map_remove_object_spot(id, "neutral_location", "")
+		level.map_remove_object_spot(id, "enemy_location", "")
+		level.map_remove_object_spot(id, "enemy_location", "")
+end
+
+function showdot(npc, who)
+	local id = npc:id() 
+	
+	if (npc:relation(db.actor) == game_object.friend) then
+		level.map_add_object_spot_ser(npc:id(), "friend_location", "")
+	end
+	
+	if (npc:relation(db.actor) == game_object.neutral) then
+		level.map_add_object_spot_ser(npc:id(), "neutral_location", "")
+	end
+	
+	if (npc:relation(db.actor) == game_object.enemy) then
+		level.map_add_object_spot_ser(npc:id(), "enemy_location", "")
+	end
+	
+end
+
+
+
+function deleteMonsterdot(monster, who)
+	local id = monster:id()
+	
+	level.map_remove_object_spot(id, "enemy_location", "")
+	level.map_remove_object_spot(id, "enemy_location", "")
+	
+	level.map_add_object_spot_ser(monster:id(), "deadbody_location", "")
+end
+
+function FriendlyFire(npc, who)
+	local id = npc:id()
+	
+	local npc_faction = character_community( npc )
+	
+	local actor_faction = get_actor_true_community()
+	
+	if (npc:relation(db.actor) == game_object.friend) then
+		level.map_remove_object_spot(npc:id(), "friend_location", "")
+		level.map_add_object_spot(npc:id(), "neutral_location", "")
+	end
+	
+	if (npc:relation(db.actor) == game_object.neutral) then
+		level.map_remove_object_spot(npc:id(), "neutral_location", "")
+		level.map_add_object_spot(npc:id(), "enemy_location", "")
+	end 
+	
+end
+
+function deletedot(npc, who)
+	local id = npc:id()
+
+	if not (npc:relation(db.actor) == game_object.friend) then
+		level.map_remove_object_spot(npc:id(), "friend_location", "")
+		level.map_remove_object_spot(npc:id(), "friend_location", "")
+	end
+	
+	if not (npc:relation(db.actor) == game_object.neutral) then
+		level.map_remove_object_spot(npc:id(), "neutral_location", "")
+		level.map_remove_object_spot(npc:id(), "neutral_location", "")
+	end 
+	
+	if not (npc:relation(db.actor) == game_object.enemy) then
+		level.map_remove_object_spot(npc:id(), "enemy_location", "")
+		level.map_remove_object_spot(npc:id(), "enemy_location", "")
+	end
+end
+
+function add_dot(npc)
+	_ = npc and level.map_add_object_spot_ser(npc:id(), "deadbody_location", "")
+end
+
+
+function remove_dot(obj, who)
+		local id = obj:id()
+		-- Need two calls to delete dot engine error
+		level.map_remove_object_spot(id, "deadbody_location", "")
+		level.map_remove_object_spot(id, "deadbody_location", "")
+end

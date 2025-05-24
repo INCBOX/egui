@@ -1,0 +1,38 @@
+Hi Stalkers !
+
+Here it is an addon to add counters for good ammo for 1.5.1 only
+Total compatibility with weapons addon.
+
+
+Setup instructions:
+
+With a mod manager or simply paste the gamedata folder in your games directory.
+
+
+What does this addon exactly ?
+
+IMPORTANT TO KNOW, THIS ADDON IS COMPATIBLE WITH ALL WEAPONS ADDONS, no patches, nothing to do.
+
+* Shows the total amount of ammo you have for each 3 types available in the inventory. (Traffic Signals Colors : Green --> Good Ammo -- Orange --> Bad Ammo -- Red --> Very Bad Ammo)
+* If you want, you can display too bad/verybad ammos counters. (verybad ammos are not availables in 1.5.1, but the addon can manage it anyway, if the option is activated, a red zero is displayed when you are out of ammos.)
+
+Some options are availables in MCM menu or in Video/Options UI/HUD if you are not using MCM.
+For example, you can change the color display for ammo counters.
+
+COMPATIBILITY :
+You can use actually, SidHUD,Vodis and GBHSR (Grok's Body Health System) with B.G.A.C. We can find in the folder "Compatibility patches", "_ CP_BGAC_SIDHUD ", "_ CP_BGAC_VODIS" and _ CP_BGAC_GBHSR.
+
+Of course it will be possible next updates to improve this addon, depending on your feedback...
+
+Thanks to Ravenascendant for his help, his script and sure the awesome MCM.https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-mod-configuration-menu
+
+See Changelog.txt for Updates
+
+You can find my other addons ready for 1.5.1 here :
+
+B.M.G.I.P  2.0  https://www.moddb.com/mods/stalker-anomaly/addons/bmgip-for-rc18-v11
+Bart's Minimap All Versions V2.0  https://www.moddb.com/mods/stalker-anomaly/addons/barts-minimap-u4h8-rc18-v1-1
+Bart's New Sorting Tabs V1.7 for 1.5.1 ONLY https://www.moddb.com/mods/stalker-anomaly/addons/barts-new-sorting-tabs-v14-for-rc18-only
+Bart's Actor Menu 43 v2.0 https://www.moddb.com/mods/stalker-anomaly/addons/barts-actor-menu-43-v20
+
+Enjoy !

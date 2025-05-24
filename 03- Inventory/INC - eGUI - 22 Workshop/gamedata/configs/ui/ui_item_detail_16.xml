@@ -1,0 +1,70 @@
+<w>
+	<itm_details x="224" y="128" width="577" height="512" stretch="1">
+		<background x="0" y="0" width="577" height="512" stretch="1">
+			<texture>ui_itm_details</texture>
+		</background>
+		
+		<cap x="43" y="50" width="440" height="28">
+			<text complex_mode="1" r="214" g="214" b="206" align="c" vert_align="c" font="graffiti32"/>
+		</cap>
+		<btn_back x="480" y="50" width="80" height="29">
+			<text font="graffiti19" align="c">ui_mm_back</text>
+			<texture>ui_inGame2_inventory_button</texture>
+			<text_color>
+				<e r="200" g="200" b="200"/>
+				<t color ="ui_white"/>
+				<d r="100" g="100" b="100"/>
+				<h color ="ui_black"/>
+			</text_color>
+		</btn_back>
+		
+		<scroll_view x="16" y="84" width="550" height="400" right_ident="8" left_ident="32" top_indent ="8" bottom_indent="0" vert_interval="0" always_show_scroll="0"/>
+		
+		<form x="0" y="0" width="535" height="460">
+			<ico x="164" y="0" width="162" height="108" stretch="1"/>
+			<pic x="0" y="0" width="38" height="50" stretch="1"/>
+			<cont x="0" y="0" width="535" height="25" stretch="1"/>
+			
+			<text_s_l x="0" y="0" width="535" height="25">
+				<text complex_mode="1" r="150" g="150" b="150" vert_align="c" align="l" font="letterica18"/>
+			</text_s_l>
+			<text_b_l x="0" y="0" width="535" height="25">
+				<text complex_mode="1" a="225" r="178" g="145" b="82" vert_align="c" align="l" font="graffiti19"/>
+			</text_b_l>
+			<text_s_c x="0" y="0" width="535" height="25">
+				<text complex_mode="1" r="70" g="70" b="70" align="c" font="letterica16"/>
+			</text_s_c>
+			<text_b_c x="0" y="0" width="535" height="25">
+				<text complex_mode="1" r="150" g="150" b="150" align="c" font="letterica18"/>
+			</text_b_c>
+			
+			<pic_line x="0" y="0" width="535" height="16" stretch="1">
+				<texture>ui_itm_line</texture>
+			</pic_line>
+		</form>
+		
+		<upgrade_tree x="0" y="0" width="535" height="460" right_ident="0" left_ident="0" top_indent ="0" bottom_indent="0" vert_interval="0" always_show_scroll="0" scroll_profile="hidden">
+			<st x="0" y="0" width="535" height="98"/>
+			<row_cells>
+				<cell_1  x="63" y="0" width="68" height="44"/>
+				<cell_1b x="63" y="24" width="68" height="44"/>
+				<cell_2  x="63" y="49" width="68" height="44"/>
+				
+				<cell_3  x="206" y="0" width="68" height="44"/>
+				<cell_3b x="206" y="24" width="68" height="44"/>
+				<cell_4  x="206" y="49" width="68" height="44"/>
+				
+				<cell_5  x="348" y="0" width="68" height="44"/>
+				<cell_5b x="348" y="24" width="68" height="44"/>
+				<cell_6  x="348" y="49" width="68" height="44"/>
+			</row_cells>
+			<cell_upgrade>
+				<btn x="0" y="0" width="68" height="44">
+					<texture>ui_button_upgr</texture>
+				</btn>
+				<ico x="0" y="0" width="68" height="44"/>
+				<cell x="68" y="0" width="68" height="44"/>
+			</cell_upgrade>
+		</upgrade_tree>
+	</itm_details>
+</w>

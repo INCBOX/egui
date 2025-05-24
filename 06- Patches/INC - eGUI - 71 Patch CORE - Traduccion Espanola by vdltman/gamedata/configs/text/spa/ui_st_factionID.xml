@@ -1,0 +1,107 @@
+<string_table>
+
+	<string id="ui_mcm_menu_targetID">
+		<text>Identificación de Facción</text>
+	</string>
+
+	<string id="ui_mcm_targetID_deadID">
+		<text>Identificar stalkers muertos</text>
+	</string>
+
+	<string id="ui_mcm_targetID_nameID">
+		<text>Identificar nombres de los stalkers</text>
+	</string>
+
+	<string id="ui_mcm_targetID_timeID">
+		<text>Mostrar identificación por la distancia</text>
+	</string>
+	<string id="ui_mcm_targetID_timeID_desc">
+		<text>Si está activada, la identificación requerirá que mires a un stalker durante un periodo de tiempo basado en la distancia para identificarlo.</text>
+	</string>
+
+	<string id="ui_mcm_targetID_rankID">
+		<text>Identificar el rango de los stalkers</text>
+	</string>
+
+	<string id="ui_mcm_targetID_talkName">
+		<text>Se requiere leer el nombre</text>
+	</string>
+	<string id="ui_mcm_targetID_talkName_desc">
+		<text>Si se activa, el jugador debe hablar o saquear a un stalker antes de conocer su nombre y rango.</text>
+	</string>
+
+	<string id="ui_mcm_targetID_speedID">
+		<text>Velocidad de identificación</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xo">
+		<text>Posición X</text>
+	</string>
+	<string id="ui_mcm_targetID_yo">
+		<text>Posición Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xp">
+		<text>Patch Offset X</text>
+	</string>
+	<string id="ui_mcm_targetID_yp">
+		<text>Patch Offset Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xn">
+		<text>Name Offset X</text>
+	</string>
+	<string id="ui_mcm_targetID_yn">
+		<text>Name Offset Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xr">
+		<text>Rank Offset X</text>
+	</string>
+	<string id="ui_mcm_targetID_yr">
+		<text>Rank Offset Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_flipAlign">
+		<text>Invertir la alineación del texto</text>
+	</string>
+	<string id="ui_mcm_targetID_flipAlign_desc">
+		<text>El nombre y el rango se alinearán a la derecha para que el HUD pueda colocarse en el lado derecho de la pantalla.</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_colorR">
+		<text>Name Text Color R</text>
+	</string>
+	<string id="ui_mcm_targetID_colorG">
+		<text>Name Text Color G</text>
+	</string>
+	<string id="ui_mcm_targetID_colorB">
+		<text>Name Text Color B</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_RcolorR">
+		<text>Rank Text Color R</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorG">
+		<text>Rank Text Color G</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorB">
+		<text>Rank Text Color B</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_targL">
+		<text>Targeting Lenience</text>
+	</string>
+	<string id="ui_mcm_targetID_targL_desc">
+		<text>A qué distancia puede estar el objetivo del centro de la pantalla y seguir siendo identificado. Un valor más alto es menos indulgente, valores más bajos hacen que sea mucho más fácil rastrear un objetivo sin aumento. Un valor de 1,0 significa que debe estar mirando directamente al objetivo.</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_unknown">
+		<text>Desconocido</text>
+	</string>
+	<string id="ui_mcm_targetID_scan">
+		<text>Identificando...</text>
+	</string>
+	
+	
+</string_table>

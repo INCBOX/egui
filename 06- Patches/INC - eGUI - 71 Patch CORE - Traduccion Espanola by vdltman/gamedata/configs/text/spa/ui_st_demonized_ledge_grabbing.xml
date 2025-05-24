@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+	<string id="ui_mcm_ledge_grabbing_title">
+		<text>Agarrarse a cornisas</text>
+	</string>
+	<string id="ui_mcm_menu_demonized_ledge_grabbing">
+		<text>Agarrarse a cornisas</text>
+	</string>
+
+	<string id="ui_mcm_demonized_ledge_grabbing_enable">
+		<text>Activar</text>
+	</string>
+
+	<string id="ui_mcm_demonized_ledge_grabbing_climbTriggerDistance">
+		<text>Distancia de activación</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_climbTriggerDistance_desc">
+		<text>Distancia máxima para iniciar el agarre a cornisas.</text>
+	</string>
+
+	<string id="ui_mcm_demonized_ledge_grabbing_raySteps">
+		<text>Precisión al agarrarse a cornisas</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_raySteps_desc">
+		<text>Cuanto mayor sea el número, mejor será la detección y posición para el agarre a costa de una ligera merma del rendimiento.</text>
+	</string>
+
+	<string id="ui_mcm_demonized_ledge_grabbing_jumpTriggerTime">
+		<text>Tiempo manteniendo pulsado para activar</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_jumpTriggerTime_desc">
+		<text>Si mantienes pulsada la tecla de saltar más tiempo que el establecido aquí, se activará el agarre a cornisas.</text>
+	</string>
+
+	<string id="ui_mcm_demonized_ledge_grabbing_soundVolume">
+		<text>Volumen del sonido</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_gruntVolume">
+		<text>Volumen de los gruñidos</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_gruntProbability">
+		<text>Probabilidad de gruñidos</text>
+	</string>
+	<string id="ui_mcm_demonized_ledge_grabbing_staminaDrain">
+		<text>Pérdida de resistencia</text>
+	</string>
+
+</string_table>
+                        

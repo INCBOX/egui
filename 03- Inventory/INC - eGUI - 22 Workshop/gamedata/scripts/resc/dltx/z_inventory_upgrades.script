@@ -1,0 +1,114 @@
+cur_hint = inventory_upgrades.cur_hint
+local char_ini = ini_file("item_upgrades.ltx")
+local param_ini = ini_file("misc\\stalkers_upgrade_info.ltx")
+local cur_price_percent = 2
+local upg_ind = {
+	["a"] = 1,
+	["b"] = 1,
+	["c"] = 2,
+	["d"] = 2,
+	["e"] = 3,
+	["f"] = 3,
+}
+
+function inventory_upgrades.get_upgrade_cost(section)
+	-- The text variable to be displayed
+	
+	-- Edited by Sota
+	--local str = " "
+	local str = ""
+	
+	if db.actor then
+		-- Read the amount necessary for installation
+		local price = math.floor(char_ini:r_u32(section, "cost")*cur_price_percent)
+		
+		-- Enter into the text variable the cost of the upgrade
+		-- Edited by Sota
+		--str = " " .. game.translate_string("st_upgr_cost") .. ": " .. price
+		str = game.translate_string("st_upgr_cost") .. ": " .. price
+	end
+	return str
+end
+
+function inventory_upgrades.get_possibility_string(mechanic_name, possibility_table)
+	local str = ""
+	if (cur_hint) then
+		for k,v in pairs(cur_hint) do
+			-- Edited by Sota
+			--str = str .. "\\n - " .. game.translate_string(v)
+			str = str .. "\\n • " .. game.translate_string(v)
+		end
+	end
+	if (str == "") then
+		str = " - add hints for this upgrade"
+	end
+	return str
+end
+
+function inventory_upgrades.prereq_functor_a( param3, section )
+	
+	local victim = get_speaker()
+	if not (victim) then
+		return ""
+	end
+	
+	local mechanic_name = victim:section()
+	local str = ""
+	local custom = false
+	
+	-- check section precondition
+	if (param_ini:line_exist(mechanic_name.."_upgr", section)) then
+		local param = param_ini:r_string_ex(mechanic_name.."_upgr", section)
+		if (param) then
+			custom = true
+			if (param=="false") then
+				return str
+			else
+				cur_hint = nil
+				local possibility_table = xr_logic.parse_condlist(victim, mechanic_name.."_upgr", section, param)
+				local possibility = xr_logic.pick_section_from_condlist(db.actor, victim, possibility_table)
+				if not(possibility) or (possibility=="false") then
+					str = str .. get_possibility_string(mechanic_name, possibility_table)
+				end
+			end
+		end
+	end
+	
+	-- Check global precondition
+	if (not custom) then
+		local indx = section:sub(14,14)
+		local tier = indx and upg_ind[indx] or 1
+		local tier_con = param_ini:r_float_ex(mechanic_name, "def_upgr_tier_" .. tier)
+		--printf("upgrade global precond | mechanic_name: %s - tier: %s - tier_con: %s ", mechanic_name, tier, tier_con)
+		
+		-- check if mechanic has tools suitable upgrade's tier
+		if (tier_con == 0) then
+			if (not has_alife_info(mechanic_name .. "_upgrade_tier_" .. tier)) then
+				-- Edited by Sota
+				--str = str .. "\\n - " .. game.translate_string("st_upgr_condlist")
+				str = str .. "\\n • " .. game.translate_string("st_upgr_condlist")
+			end
+		-- permanently locked
+		elseif (tier_con == 1) then
+			-- Edited by Sota
+			--str = str .. "\\n - " .. game.translate_string("st_upgr_cant_do")
+			str = str .. "\\n • " .. game.translate_string("st_upgr_cant_do")
+		end
+	end
+	
+	-- Check money
+	local actor = db.actor
+	if actor then
+		-- We read from the upgrade section its price
+		local price = math.floor(char_ini:r_u32(section, "cost")*cur_price_percent)
+		-- Read the number of dough from YY
+		local cash = actor:money()
+		-- If the bubble is not enough, then we list the corresponding line
+		if (cash < price) then
+			-- Edited by Sota
+			--str = str .. "\\n - "..game.translate_string("st_upgr_enough_money").."\\n   • "..price-cash.." RU"
+			str = str .. "\\n • " .. game.translate_string("st_upgr_enough_money") .. ": " .. price-cash .. " RU"
+		end
+	end
+	return str
+end

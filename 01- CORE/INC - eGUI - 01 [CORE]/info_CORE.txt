@@ -1,0 +1,3 @@
+
+
+		we tried to replace all the textures with better ones and originals from trilogy. also all Enhanced GUI textures stored in this folder. patches will provide edited textures in own folder.

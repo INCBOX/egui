@@ -1,0 +1,20 @@
+
+<!-- ENHANCED GUI © 2007 INCBOX INC TEAM -->
+
+<credits_seq>
+  <over_main_menu>1</over_main_menu>
+  <persistent>1</persistent>
+  <global_wnd width="1024" height="768">
+
+    <auto_static x="0" y="0" width="1024" height="768" stretch="1">
+		<texture x="0" y="0" width="1280" height="720">ui\enhancedGUI_15</texture>
+		<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+			<texture>ui\enhancedGUI\gui_overlay</texture>
+		</auto_static>
+    </auto_static>
+
+    <function_on_stop>xr_effects.after_credits</function_on_stop>
+  </global_wnd>
+
+#include "ui\ui_credits_base.xml"
+</credits_seq>
